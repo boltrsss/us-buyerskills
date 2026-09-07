@@ -1,0 +1,12 @@
+/* Minimal styles for the play button */
+.avp-btn { transition: opacity .2s ease, transform .2s ease; }
+.avp-btn:hover { transform: translate(-50%, -50%) scale(1.03); }
+.avp-btn:focus { outline: 2px solid #fff; outline-offset: 3px; }
+
+.avp-icon {
+	width: 0; height: 0;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+	border-left: 18px solid #fff;
+	margin-left: 4px;
+}
