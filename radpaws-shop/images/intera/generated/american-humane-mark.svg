@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="148" height="142" viewBox="0 0 148 142" role="img" aria-label="American Humane">
+  <rect width="148" height="142" rx="16" fill="#1B4D3E"/>
+  <g fill="#F5F0E6" transform="translate(74 46)">
+    <ellipse cx="0" cy="9" rx="18" ry="18"/>
+    <ellipse cx="-24" cy="-14" rx="9" ry="9" transform="rotate(-28 -24 -14)"/>
+    <ellipse cx="-9" cy="-26" rx="8.5" ry="8.5" transform="rotate(-10 -9 -26)"/>
+    <ellipse cx="9" cy="-26" rx="8.5" ry="8.5" transform="rotate(10 9 -26)"/>
+    <ellipse cx="24" cy="-14" rx="9" ry="9" transform="rotate(28 24 -14)"/>
+  </g>
+  <g fill="#F5F0E6" transform="translate(22.34 86)">
+    <path fill-rule="evenodd" transform="translate(0.00 0) scale(0.72)" d="M9 0 L18 20 H13.5 L11.8 15.5 H6.2 L4.5 20 H0 Z M7 12.5 H11 L9 7.5 Z"/>
+    <path transform="translate(14.76 0) scale(0.72)" d="M0 20 V0 H4.2 L10 12 L15.8 0 H20 V20 H15.8 V8 L11.4 17 H8.6 L4.2 8 V20 Z"/>
+    <path transform="translate(30.96 0) scale(0.72)" d="M0 20 V0 H15 V4 H4.2 V8 H13 V12 H4.2 V16 H15 V20 Z"/>
+    <path transform="translate(43.56 0) scale(0.72)" d="M0 20 V0 H10 C14.2 0 16.5 2.6 16.5 6.2 C16.5 9.4 14.4 11.8 11 12.4 L16.5 20 H11.5 L6.6 12.6 H4.2 V20 Z"/>
+    <path transform="translate(56.88 0) scale(0.72)" d="M1 20 V0 H5 V20 Z"/>
+    <path transform="translate(63.00 0) scale(0.72)" d="M16 5 C14.2 2 11.2 0 7.8 0 C3.2 0 0 4 0 10 S3.2 20 7.8 20 C11.2 20 14.2 18 16 15 L12.4 12.8 C11.4 14.6 9.8 15.8 7.8 15.8 C5.2 15.8 4 13.4 4 10 S5.2 4.2 7.8 4.2 C9.8 4.2 11.4 5.4 12.4 7.2 Z"/>
+    <path fill-rule="evenodd" transform="translate(76.32 0) scale(0.72)" d="M9 0 L18 20 H13.5 L11.8 15.5 H6.2 L4.5 20 H0 Z M7 12.5 H11 L9 7.5 Z"/>
+    <path transform="translate(91.08 0) scale(0.72)" d="M0 20 V0 H4.2 L12.8 14 V0 H17 V20 H12.8 L4.2 6 V20 Z"/>
+  </g>
+  <g fill="#F5F0E6" transform="translate(25.36 110)">
+    <path transform="translate(0.00 0) scale(0.82)" d="M0 20 V0 H4.2 V8 H12.8 V0 H17 V20 H12.8 V12 H4.2 V20 Z"/>
+    <path transform="translate(16.34 0) scale(0.82)" d="M0 0 H4.2 V11 C4.2 14.8 6.2 17 8.5 17 S12.8 14.8 12.8 11 V0 H17 V11.2 C17 16.8 13.6 20 8.5 20 S0 16.8 0 11.2 Z"/>
+    <path transform="translate(32.68 0) scale(0.82)" d="M0 20 V0 H4.2 L10 12 L15.8 0 H20 V20 H15.8 V8 L11.4 17 H8.6 L4.2 8 V20 Z"/>
+    <path fill-rule="evenodd" transform="translate(51.48 0) scale(0.82)" d="M9 0 L18 20 H13.5 L11.8 15.5 H6.2 L4.5 20 H0 Z M7 12.5 H11 L9 7.5 Z"/>
+    <path transform="translate(68.64 0) scale(0.82)" d="M0 20 V0 H4.2 L12.8 14 V0 H17 V20 H12.8 L4.2 6 V20 Z"/>
+    <path transform="translate(84.98 0) scale(0.82)" d="M0 20 V0 H15 V4 H4.2 V8 H13 V12 H4.2 V16 H15 V20 Z"/>
+  </g>
+</svg>
