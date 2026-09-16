@@ -1,0 +1,95 @@
+:root {
+  --body-color: #fff;
+  --background-image-url: url('/images/advertorial/wellwell/header/bg.webp');
+  --bg-header-size: cover;
+  --main-color: #108f72;
+  --main-color-blur: #108f7280;
+  --hero-text-color: #fff;
+  --info-icon: url('/images/advertorial/wellwell/info-icon.svg');
+  --info-border: 1px solid rgb(9 58 74 / 10%);
+  --default-text-color: #1c1c1c;
+  --bg-saving-section: url('/images/advertorial/wellwell/saving-section/saving-section-bg.webp');
+  --footer-bg: #165647;
+  --related-section-bg: #108f72;
+
+  /* full button styles */
+  --button-border: 1px solid #108f72;
+  --button-background: rgb(16 143 114 / 20%);
+
+  /* footer */
+  --button-bg: url('/images/advertorial/tech/subscribe-arrow.svg') no-repeat center right 24px;
+  --sticky-bg: url('/images/advertorial/wellwell/sticky.webp');
+}
+
+.sticky-bg {
+  background: var(--sticky-bg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sticky-bg.top {
+  width: 100%;
+  max-width: none;
+  border-radius: 0;
+  inset: 0 0 auto;
+  border: none;
+}
+
+.sticky.top .sticky-content {
+  max-width: 1245px;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+
+.container-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  z-index: -1;
+  background-image: var(--background-image-url);
+  background-size: var(--bg-header-size);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+@media (width <= 1024px) {
+  #sticky .sticky-content {
+    background-size: cover;
+    padding: 10px;
+    border: none;
+    background-image: var(--sticky-bg);
+  }
+
+  #sticky.top {
+    height: 55px;
+  }
+
+  #sticky.top .sticky-logo {
+    display: block;
+    min-width: 15%;
+    max-width: 35%;
+  }
+
+  #sticky.top .sticky-content {
+    background: none;
+    border-radius: 0;
+    padding: 0 10px;
+    gap: 2%;
+  }
+
+  #sticky.top .offer-section {
+    width: auto;
+    flex: 0 0 auto;
+  }
+
+  #sticky.top .offer-section .cta {
+    padding: 0 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    height: 25px;
+  }
+}

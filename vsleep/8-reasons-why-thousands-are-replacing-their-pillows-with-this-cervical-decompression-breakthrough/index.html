@@ -1,0 +1,949 @@
+    
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+    <script>
+// Generate window.gu_id for tracking
+(function() {
+  var UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+  function isValidGuId(value) {
+    return !!value && UUID_REGEX.test(value);
+  }
+
+  // Check for gu_id in get params
+  var url = new URL(location.href);
+  var searchParams = url.searchParams;
+  var urlGuId = searchParams.get('gu_id');
+
+  if (isValidGuId(urlGuId)) {
+    window.gu_id = urlGuId;
+    localStorage.setItem('gu_id', window.gu_id);
+    return;
+  }
+
+  // Check for gu_id in local storage
+  var guId = localStorage.getItem('gu_id');
+
+  if (isValidGuId(guId)) {
+    window.gu_id = guId;
+  } else {
+    window.gu_id = self.crypto.randomUUID();
+    localStorage.setItem('gu_id', window.gu_id);
+  }
+
+  // Add gu_id to the URL
+  url.searchParams.set('gu_id', window.gu_id);
+  history.replaceState({}, '', url.toString());
+})();
+</script>
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8"/>
+    <meta name="description" content="">
+    <meta property="og:image" content=""/>
+    <meta name="twitter:image" content=""/>
+    <title>8 Reasons Why Thousands Are Replacing Their Pillows With This &quot;Cervical Decompression&quot; Breakthrough | VelaSleep</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover"/>
+    <meta name="referrer" content="origin-when-cross-origin"/>
+
+    
+        
+                                      
+    <!-- Global js variables -->
+    <script>
+      (function () {
+        window.giddyup = {
+          environment: 'production',
+          brandId: '',
+          offerId: 7558,
+          offerUrl: 'https://getvelasleep.com/offer-01-j/',
+          bundle: '{"id":null,"type":null,"price":null}',
+          offerLang: 'en-US',
+          offerSlug: '8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough',
+          offerSites: {"da":"https:\/\/wellwellwell.co\/da\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","id":"https:\/\/wellwellwell.co\/id\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","it":"https:\/\/wellwellwell.co\/it\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","pt-BR":"https:\/\/wellwellwell.co\/pt-BR\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","el":"https:\/\/wellwellwell.co\/el\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","tr":"https:\/\/wellwellwell.co\/tr\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","de":"https:\/\/wellwellwell.co\/de\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","es":"https:\/\/wellwellwell.co\/es\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","es-419":"https:\/\/wellwellwell.co\/es-419\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","fi":"https:\/\/wellwellwell.co\/fi\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","fr":"https:\/\/wellwellwell.co\/fr\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","he":"https:\/\/wellwellwell.co\/he\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","ja":"https:\/\/wellwellwell.co\/ja\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","ko":"https:\/\/wellwellwell.co\/ko\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","nl":"https:\/\/wellwellwell.co\/nl\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","no":"https:\/\/wellwellwell.co\/no\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","pl":"https:\/\/wellwellwell.co\/pl\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","pt":"https:\/\/wellwellwell.co\/pt\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","ru":"https:\/\/wellwellwell.co\/ru\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","sv":"https:\/\/wellwellwell.co\/sv\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","zh":"https:\/\/wellwellwell.co\/zh\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/","cs":"https:\/\/wellwellwell.co\/cs\/8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough\/"},
+          country: '',
+          siteDomain: 'wellwellwell.co',
+          currency_format: {
+            decimal_mark: '.',
+            thousands_separator: ',',
+            prefix: '$',
+            suffix: '',
+            currency_code_suffix: '',
+            format: '$[amount]',
+          },
+          shopLogoUrl: 'https://prod-assets.gu-plat.com/logo/wellwellwell-logo_2023-10-04-194432_dmyl.svg?width=198&amp;height=24&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85',
+          siteUrl: '/',
+          siteUrlMainPage: '/',
+          siteUrlCheckout: '/checkout/',
+          statsigExperiment: '',
+          isAdvertorial: true,
+          isListicleLanding: false,
+          visitorInShippingCountry: false,
+          offerGroupName: '59.99'
+        }
+
+        // Get CtaLinkAltDomains
+        window.giddyup.ctaLinkAltDomains = {"18edde9dbb5ac79274459a9890b215d0":"beautysaver","fdca2fd399ca5efbf192646956f5f375":"wellwellwell","7011f5fe63c53f92745018073c6f51a1":"myhoom","a9060fdab5ff9279965d46e62817b2f2":"dailydiscovery","06eee9787a2fb25edf84de0825249537":"fastfit","20d2b71a18d51b99b8531684ce0bb655":"petpals","eaf7010bfd36bd073b38092663cfbebf":"ispypen","fb06345c95ebcd0792a92f8d0ed748ad":"olumiring","aaf0f6d9fccc8a27cc7139576d23afe8":"sightbulb","3e37269050ed7874b3fdd6a544b5e0d3":"superfeedy","b91e7edaa81b73756c42af0bc33138ac":"kailoflex","6ea1d291778cfcf0667a645ed6999431":"hai","46f733b7c126f9e4c2c2549006d78c06":"lifeprofitness","b5745104747f4d7f0fa71dbf7de8379c":"palmpress","a84e2869e0d833dc1afadcb8132a7b48":"betterbutts","d2b3cb65c74f297a9b9fac2fc0a95fe1":"lavie","cb2c8f26d2ddcad2458fe86c9ef8650d":"quip","7e54657b01892b27b6d7db510d621a0d":"wearables","3bd54d0076477e2072c45da3af0bd2ac":"mode","9f158be4bb0f139fdee9f79951dec04c":"larineco","a9f59b279fb56d843c5b532547ecb17d":"ringobottle","e0f823f2d9fd63e91578668f24edca58":"dairypill","604f0ce198f50292a6cb5d8fbcb2e886":"xtrapc","21f92013b139be88d6f882939d3fefb1":"tikitunes","2768a73e925acd971762bb088e10ae59":"audienatom","6bec05803a71ae3e1225bc8843ab7939":"omegadatacube","cde8e2dc02bc432ea78be04520fc2919":"paingoneplus","3c425582da411b035c39bf02a4e74ef4":"betterbreathingsport","0e735bd814071f5e16db23cca6bd5032":"airphysiokids","2a2697524603f1f3dbb7f2f932f8ceac":"agelesscollagen","ee0022844393db9f0cc0ee06ca6b6384":"stupidcartray","94687f15d81d5f47dda92a9db6f53153":"polygons","e2ada8215ff955c99d5390310395d6b9":"chillpill","d626ded5660f528c95a5764700a6be21":"lifevac","936d09beb340614e4b164d411d937291":"dodow","3be3115beb002bf82a3c7a5958931d54":"imemories","9841abc618b052941ed419bf2b7e5fdc":"react","9eba6dcd51c59a489d1c98aa52155bde":"pluxy","6077f77de663de95f6d366b7e08e0b8e":"halebreathing","39a6e4f256eb8d0cf3f3a8635f3ccf01":"bimebeauty","f27b4b81eb21df42297cfec2ea31879c":"thewand","b219e97b96acd881d60a8ab74040cef0":"boldify","7ca3d7d8c9d23426dba74c27b031c7da":"kelvintools","3bf86ce94a2637aacbd0d3de5c353759":"knenest","7af699287959b9bd732efa764c7fc0e9":"godonut","af9d839217d4f6037a90cf2980784f6f":"footpeelmask","ed214214450b4127c9de6687f20d3ad7":"pacuzzi","75093f804d2d41877c9b596c047478bd":"prodtestbrand","9cd631fb94d1bc1b6bac31f6620077b3":"sealpro","e5d175f9651706b99da394c9a423357e":"gopurepod","7a59de4f95f625dd3087a2bf0b0a4a03":"gourmaxpro","256ebb778659317bc138f244e9c46827":"omnidatasafe","be453ab0005d3c4e791d25f28c8b9e3d":"photostickmobile","36a9510dcc5b5bc5cc74c21c1e5b985f":"sockdock","1c73e0538434c3ea87d784b8f0241f67":"photostick","a295476730bd2208deb75a6f16542780":"anythingspeaker","300b69b9e1ebb7d46b9497e2eaf6c81f":"omegawifi","22738b5df53c1e0bc8fc2b23ae440d23":"isavera","e4cc6f100caa242114ac8121a4381315":"cozycharge","35f443fe8cc0a6d9e7715ec3a582cb83":"screenklean","dad7703d8d0312ceb49bbfeff892902c":"aculief","6a97fe0f8d98658a2ce3071b4db13363":"halolifelight2","c1c01bf6e66bd1554a1772865fef08ee":"purifair","1d778aca3b5e6ac985a60eb505fab31c":"triggerpointrocker","50ce5d9118f594fd9318a7332b83539e":"hygenius","db647d7cfeeaf915cc3be777c02e54ea":"snapncharge","dcf46fbccb46c27d9e6c44bad1f20b8f":"zithionx","94f956ddcc2c336e4c9b79fc6b5da575":"airesone","a458eca91a28b6eaaed8259661030044":"wackydealsgroup","e3e1c6fba0bc5d690d5479f6da43cfa9":"productionbranddomaintesting","e751aa759f66effc5dc6b0216e0b588d":"dynastychefknife","4e878b99e62cbe1848008ca1cc3c006e":"getriddex","64c9bb2d8fdb6865b7506632fcfa8d23":"laughland","0c1781475ddfe2944f6383fb2d3a2a55":"antiaging","e04baade1d0e292705929bb8dad9e285":"scarfadeduo","c6eda61b015ea57a4024e0a957fb7afb":"trilastin","16ba9fb5d9c1440b7c307c18c01bbdd4":"smartcard","6b1cdd427ff5e83d5bc4bae8be00d682":"glareguard","dac367f9e23aeed7041e26090167fb37":"icebox","42807fca9cdcb4a083cb01290fd02e85":"trevabugfan","326939b27f80dd8b98a259ab5776ee84":"flexsafe","c75ffcff0400ba5dbf2fa07df5db6f20":"luxglo","268a0a88819f3868511dfca401a2b596":"bellyorb","71250ee5e21e29d8b57bb4356c4c8523":"foxgloves","b87e9128c0c7694708fdbfe521890048":"bril","36a2dbb2841283803cb16731f0cb5987":"copperphonepatch","5aa9553f93037af3307daa06deaaace5":"waterbear","382ba743b4b98773451acf1609d63120":"hearsone","504130c10f0f5885e176ff3eb7555566":"newproductiontestgroup","f10c3acdf38f5995ca5234d5cda14ad6":"trulyclear","8e846ae13b0d08437bed7713aae708f9":"vibrathotics","415aefa10416d811411fcd497e065919":"soulinsole","3fd599258aec6e87d942504fdfa955e5":"barestep","695096b14a06318c4ec84962e5f99876":"keyzmo","b91b8d2bae40b0ddcf8e20431d6bc02f":"amazingproducts","530cd3a0857418f0d4fd5f0566f3cd2f":"lumineye","b0b16365b86fce26611e2b00c03b5546":"getaromatherapist","c20de0155288ad8c6c0cb6c07291da77":"groomie","cf5797c55dc1df749b5d849506bde30d":"cobrafireblanket","1449ab8ac1ddd43db97a450ae5a5e4e0":"hootie","3a26e2503ac7e5b37d27374ba8a4adcf":"theraice","8558f8f6e5c46b0be1c7b9de9498a17c":"surgeemergencybulb","2e8cc0ba6b89ce019211d13f9a31ea7d":"golfkicks","b374b40028b952878b17046b29480a44":"furzapper","22983a06b819049a145d9ed68914912a":"erasilk","83b51b132b813f305bae91906f816df9":"sleepfuel","89793227bfdc7751af3ab433da992a75":"mokshabeam","21163fa595995c46450dcdb39e64a8cf":"ebook","849adbd2d3a1d8e3ea535264ef8bce92":"domaincreationtesting","3257ced28e61a700afbde32bc3bcee14":"domaintesting","9d9be765cd4f03ba2f09740000f26717":"illo","ffbb331a26e243d37a6420aa30301ae8":"qafastlytesting","db4fc67ec0a435efd367fc48992feeab":"fixd","a22067276cc38ec56f500d7c0030956f":"switchgrip","9e362e80d017c7f2260c8b29c62177f8":"riddiapress","de9f2a785d8a946b6313b93b3dc89ce7":"earseeds","53489b12b2a2e3324d125587da15ea81":"intakebreathing","70b712aaa4dcddb30856bc7c2f2ef39f":"zquiet","031eee8caa558ae3d6fdc29c043964eb":"therafootpro","fb6ae92a46368692196a0371e9ed5682":"myhappyfeetsocks","3c2c49af7e46432012e6dfc758312026":"getactiveskinrepair","8074c51f1279493d0b218702611452e9":"walletdefender","a93182eada032d4e6dc8ada136792734":"guidelight","55621bfab39a53a07a2c8dfec3100479":"moonbuddy","5ea8634f2c1a53bc9f544d7925dea714":"thinoptics","4028248375331321bf3edbeb4f586cc6":"campanelliproseriesstainremover","be8e6d315ec97c9a90975d1e38ff7db3":"cupstation2","0162cf7c8863c878cb2a95129c4c68d5":"groovzwirelessearbuds","7ffd6cf524b06d605e7dc00170060394":"flipfork","3b297f28307dfd7a9c6fd5afc9da35f6":"pockettripod","0600bd8fa0cf959657f5f424ca5e8911":"aquapure","e802e43496af2f737b73821c2d0fd73a":"birdiematpro","994cd94bff2bd8d07370ae2e2ebfc4d9":"aculiefheadachereliefhat","f9c8e4726fe664b687c8b8e46c0843f1":"ancientketo","61699bccf022c2746daa669b6cf0d0d5":"duocover","32f00843e3184f60d5821738944ff2bb":"omnibreathe","e1cf5573e23c113e2f470cc4260f4c4a":"moonbird","988089eb929b6d81b086c26969ffe443":"matmend","7fcd24725046ade9fff495a8546b1dc8":"cloudalignpillow","c45ca8d440d41f9ac336d5f857555dfd":"pepperpong","db4cf1fb492286fe76b83346fec4217e":"happytoiletcleaner","4429aa8b49545146711b6c1c4ae36dfb":"airlighter420","7cb7014a993944658d0eb8d16f7646b8":"catallergenneutralizingspray","1598bc7a3a52154f5ba5b29d7420773a":"thechairblanket","0a846f5f1bef90b01a37f5d2991d1c53":"nuudshowerhead","6a3164b3a0282260b6b5e7b35f77fe2e":"tirehero","f9d03c732da6683c7b4389a5363c7c6c":"donotdeleteviralfeed","ab6d852b3068cb4cb2b05c21c196b9dd":"audienatom2","d7c0b7f31669737c0dd9b0fa5572a8f4":"tenikle","f1e8c9067e5b6a79068eb2b61c1fcc8d":"smartlock","6e2d7d78623b56ac318207a48247e5aa":"dreamvac","d7a2cb5c26263874359d26fb25dd5f09":"flightpath","a3167ec0c4d8e50544f5d834679a731d":"airtubeantiradiationheadphones","faa4dab14ffe58116aca382b91ea7774":"jiffys","4bf38e8b0523184d073316a99ea41a32":"bedscrunchie","51b5d810f31d7a63fbf9d91d592758fb":"vanishdryserum","49f76eef164238f01bf0bc2be03e65b0":"statikstatepowerbank","c34739da2536f3c227a8bfdface54d9b":"groundingsheets","fc4fe66ecb6e0e61439bac5f62d812bf":"tibo","67ddb62f0d17614ec264b5af3b9fc9c6":"zippisweeper","f0eb972d68f10e91bf7f16f8cb7f7fd9":"avioapextravelbackpack","c8e561d332452ae02c607211b8f2a912":"legura","d6b2c1eef3fdbc6bee2066b8e6f1dde0":"humebodypod","3e704b3cec21037cacebceacd4e74e76":"rysesmartshade","0e35703149242ca367ec906faa483e9a":"lumenology","4f5b2cff5ac054db84c89288a423a12d":"keysmartoriginal","b8d0fdd5fa0f86a679e1380f55545907":"fixits","7d7fe7126ac14779ef1e22e2f3435117":"airc","860a84f91e03f79af9986fbc4247387e":"rushcharge","0ec3ec00a75d631c10d083afa9f9aa7a":"photostickomni","b2e4681df5ca2b652a615188b54fc74c":"tornadopro","4d33cf6e22a76e85473314bb5b5e2936":"ayowearable","10c532cf4485e376d1637d12e06d6a6d":"aviohatch","ebe95da9fe615602e97d5a052b1b3910":"mymedicsidekick","3f7290590de88573d66a0c27cb38f40c":"riorouter","0e1cc221cb94d1036049dc24fb8feb0f":"nasalfreshmd","6ae200908bc9ab82a93cf715d186fc61":"sonicsmoothpro","65214303579d9aa090c25976b94a9cff":"fieldy","2cb42baefa990067c6b6b07013b1662e":"heardirectclub","802f121ed1296e6afdb5ff353af4006b":"washupcleaner","396f1e880d47660d517c5449c5333217":"snorerx","7e330efa60b04aa6eaf7dcfcbbff0476":"vossagin","cad43587e6730e0a58f403a085e1dea1":"peeps","b3bb39b213ebc766020bc2e56098378b":"serenesitz","6b86d1421a7b73213c4904ad72a66e62":"cordbrick","e06805c02c13021a0cb485e24e1431da":"bumbumbidet","6f3debe4fb5f4ef687a89f1875d3b487":"shinysmile","a3dad5adda8bfe3f9edd43d1eda65fae":"clickfreeultra","557c0d5525fc458b32ff98f29892f9fd":"greatgums","e9fc82c8ca00800da96e1d9b1b1ea633":"wonderfulwidget","cf2382ba15b10da13c07124b1460c578":"whiteningstrips","ad62d89cd4c252b231e15b97c2d37842":"hypermount","27a32482ed13b42931c7b7050181ff18":"theraicesm","7d95ef7f5f9efdfda9576e960cf252b4":"sondurtravelcushion","e73965e5b84d039f8362fe764f6cc491":"hydrogenwater","f79b4879b20de82273e3da2e750431b8":"pmdmicroderm","1b6155447982f94494aa5d18ef76da6c":"lumen","01d98a751b941d7f710fc428b6c37bd8":"purelywhitedeluxe","d5e4a8c824f19923a7bea56ceffa3ee2":"aerless","873d831fbbd9ab6e6e6bdecbd2793308":"","8245d3048d5f7db46b7c7252b046adc3":"uglysleepclub","98552feb86c9b65ad9f101a961209e61":"nervecalm","31255cabb0e8225ba8221ea0e81cdac6":"airphysio","af9d75d67a1d3cc814f79659bf411330":"legacywill","03967761579b5631bd8ffb3097844e94":"kailo","83c14c4e1f6f6e7da7d8e721c2724a05":"velasleep","cdc6edc16c2d5ed7c459b39606fff5cd":"invisawear","cde57afb2dd871fb8fbb6188dbeff9d4":"snorestop","85420cce447bda8420a79d350ae4a8fe":"liftlyinsoles","b9d2938edcae5a0d6c0242c60a37e69b":"smooche","2eaeeae57448631bc16aefdc5eade09a":"treatmedy","ce97e872dd9af74640567c6c8c4983fa":"dermachom","7eb85f5150eb2fae41408733b0fd4b4f":"kelvin8","1a16aebcada4899f4c9c10d3a6bed350":"evachill","388bb44d81ab2292e8eba3544a7246b8":"fightfightingspray"};
+        window.giddyup.ctaLinkAltDomains['ad99a5c5f61bdc07d63430c3be71bac2'] = 'techetc';
+
+                                                window.giddyup.ctaLinkedBrandDomain = 863706;
+                  
+        // Redirect to translated landing page based on browser language
+        // Disable language redirect if "?_noLang=1" GET parameter present at URL
+        let getParams = new URL(document.location).searchParams;
+        if (getParams.get('_noLang') !== null) {
+          return;
+        }
+
+        // Detect user language
+        let userLanguage = navigator.language || navigator.userLanguage;
+        let browserLanguages = navigator.languages;
+
+        // Override if ?lang=xx is in URL
+        if (getParams.has('lang')) {
+          userLanguage = getParams.get('lang');
+          browserLanguages = [userLanguage];
+        }
+
+        const userLanguageCode = userLanguage.split('-');
+        let redirectTo = '';
+
+        if (userLanguage !== giddyup.offerLang && userLanguageCode[0] !== giddyup.offerLang) {
+          const currentUrl = document.location.origin +
+            (document.location.pathname.endsWith('/') ? document.location.pathname : document.location.pathname + '/');
+
+          browserLanguages.forEach((locale) => {
+            if (redirectTo) return;
+
+            const lang = locale.split('-')[0].toLowerCase();
+
+            // Base language
+            if (typeof window.giddyup.offerSites[lang] !== 'undefined' && !redirectTo.length) {
+              const targetUrl = new URL(window.giddyup.offerSites[lang], document.location.href);
+              const targetCanonical = targetUrl.origin +
+                (targetUrl.pathname.endsWith('/') ? targetUrl.pathname : targetUrl.pathname + '/');
+              if (currentUrl !== targetCanonical) {
+                targetUrl.searchParams.set('lang', lang);
+                redirectTo = targetUrl.toString();
+              }
+            }
+
+            // Exact locale
+            if (typeof window.giddyup.offerSites[locale] !== 'undefined' && !redirectTo.length) {
+              const targetUrl = new URL(window.giddyup.offerSites[locale], document.location.href);
+              const targetCanonical = targetUrl.origin +
+                (targetUrl.pathname.endsWith('/') ? targetUrl.pathname : targetUrl.pathname + '/');
+              if (currentUrl !== targetCanonical) {
+                targetUrl.searchParams.set('lang', String(locale).toLowerCase());
+                redirectTo = targetUrl.toString();
+              }
+            }
+          });
+        }
+
+        if (redirectTo.length) {
+          const currentUrl = new URL(document.location.href);
+          const redirectUrl = new URL(redirectTo);
+
+          // Ensure we propagate altdomains
+          redirectUrl.hostname = currentUrl.hostname;
+
+          currentUrl.searchParams.forEach((value, key) => {
+            redirectUrl.searchParams.set(key, value);
+          });
+          document.location.href = redirectUrl.toString();
+        }
+      })()
+    </script>
+
+    <script type="text/javascript" src="../js/lazysizes.min.js"></script>
+
+    <link rel="icon" href="https://prod-assets.gu-plat.com/favicon/WWW-Favicon.png?width=32&amp;height=32&amp;fit=bounds&amp;format=auto&amp;quality=85"/>
+                    <link rel="stylesheet" media="screen" href="../css/themes/advertorial/wellwellwell.css"/>
+    
+                
+        
+    
+            <link rel="stylesheet" media="screen" href="../dist/advertorial.a0146fbb008da81e5e2e.css"/>
+    
+<style id="standalone-fixes">
+/* Standalone download fixes: keep sticky CTA above page content and make footer links render without Vue. */
+#sticky.sticky { z-index: 99999 !important; }
+#sticky.sticky.sticky-visible { opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; }
+.footer-static-link { color: var(--body-color, #fff) !important; text-decoration: none; font: inherit; letter-spacing: inherit; text-transform: uppercase; }
+</style>
+</head>
+
+
+
+    
+<body class="ltr 8-reasons-why-thousands-are-replacing-their-pillows-with-this-cervical-decompression-breakthrough wellwellwell-theme with-sticky-footer">
+<div id="container">
+    <div id="main-wrapper">
+        <main id="app" role="main">
+                                    <div class="column-wrapper">
+                        
+        
+    
+            
+                                                                            
+        <div class="header-wrapper">
+            <div class="container-bg"></div>
+            <header>
+                                <div class="logo">
+                                                                        
+            
+    
+                
+                                                                        
+                                                
+    <img alt="logo"
+         
+         width="198"
+         height="24"
+         src="https://prod-assets.gu-plat.com/logo/wellwellwell-logo_2023-10-04-194432_dmyl.svg?width=198&amp;height=24&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85"
+         srcset="https://prod-assets.gu-plat.com/logo/wellwellwell-logo_2023-10-04-194432_dmyl.svg?width=198&amp;height=24&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 198w, https://prod-assets.gu-plat.com/logo/wellwellwell-logo_2023-10-04-194432_dmyl.svg?width=396&amp;height=48&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 396w"
+         sizes="198px"
+         decoding="async"
+         loading="lazy"/>
+
+    
+                </div>
+                            </header>
+                        <div class="hero hero-section">
+                <div class="full-content-section video-full-width">
+                    <div class="subhead">Advertorial</div>
+                    <h1>8 Reasons Why Thousands Are Replacing Their Pillows With This &quot;Cervical Decompression&quot; Breakthrough</h1>
+                    <div class="byline">
+                        <div class="author-block">
+                                                        <span class="published-by">By </span><span
+                                    class="name">Alex Taylor</span>
+                            <div class="published">Published on 09/09/2026 at 4:42 PM</div>
+                        </div>
+                    </div>
+
+                                                        
+            <iframe title=""
+                class="main sproutvideo-player lazyload"
+                                    data-src="https://videos.sproutvideo.com/embed/8c9adab51c1de4cd06/be61eff5c4bc11a9?showControls=false&amp;transparent=true&amp;autoPlay=true&amp;loop=true&amp;volume=0&amp;volumeControl=false"
+                    data-load-mode="1"
+                                referrerpolicy='no-referrer-when-downgrade'
+                width="100%" height="300" frameborder="0" allowfullscreen=""></iframe>
+    
+                                    </div>
+            </div>
+        </div>
+
+    
+            
+                                            <div class="content-section text-full replaceHref" data-url="https://getvelasleep.com/offer-01-j/">
+            <p><span style="background-color:transparent;color:#000000;font-size:18px;">If you wake up with neck pain, stiffness, or feel exhausted no matter how long you sleep, then you need to see this breakthrough sleep solution.</span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">VelaSleep is a new type of ergonomic pillow designed to gently relieve pressure on your neck while you sleep. Instead of letting your head sink and compress your spine, it helps support your natural alignment and reduce tension overnight.</span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">It’s quickly gaining attention for its unique decompression design. People make the switch after learning something that millions of Americans still haven’t realized: <strong>your </strong><i><strong>pillow</strong></i><strong> is the real cause of your pain and poor sleep.</strong></span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">Keep reading to discover why so many people are making the switch to VelaSleep — and how it could completely change the way you sleep.</span></p>
+        </div>
+    
+            
+                                                            <div class="content-section title-element">
+                        <h2>
+                1. It Eliminates Neck Pain By Relieving Pressure While You Sleep
+            </h2>
+        </div>
+    
+            
+                                                                    <div class="video-full content-section video-content-width">
+            <div class="video-container">
+                                <div class="video">
+                                                        
+            <iframe title=""
+                class="main sproutvideo-player lazyload"
+                                    data-src="https://videos.sproutvideo.com/embed/dc9adab51c1de5c456/9d851f210e3bffbd?showControls=false&amp;transparent=true&amp;autoPlay=true&amp;loop=true&amp;volume=0&amp;volumeControl=false"
+                    data-load-mode="1"
+                                referrerpolicy='no-referrer-when-downgrade'
+                width="100%" height="446" frameborder="0" allowfullscreen=""></iframe>
+    
+                                    </div>
+            </div>
+        </div>
+    
+            
+                                            <div class="content-section text-full replaceHref" data-url="https://getvelasleep.com/offer-01-j/">
+            <p><span style="background-color:transparent;color:#000000;font-size:18px;">Most people assume <strong>waking up in pain is “just part of getting older”… but they’re wrong.</strong> The real problem often starts with your pillow.</span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;"><strong>Traditional pillows collapse under your head</strong> and force your neck into unnatural positions, creating constant pressure on your spine throughout the night.</span></p><p><a href="http://link"><span style="background-color:transparent;color:#1155cc;font-size:18px;"><strong><u>VelaSleep</u></strong></span></a><span style="background-color:transparent;color:#000000;font-size:18px;"> works differently. Instead of compressing your neck, its <strong>Cervical Decompression Design™</strong> <strong>gently lifts and supports the base of your spine </strong>to relieve pressure and reduce tension while you sleep.</span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">That means you wake up feeling loose, rested, and pain-free — instead of stiff, sore, and exhausted.</span></p>
+        </div>
+    
+            
+                                                            <div class="content-section title-element">
+                        <h2>
+                2. It Helps Reduce Snoring By Keeping Your Airway Open While You Sleep
+            </h2>
+        </div>
+    
+            
+                                                                    <div class="video-full content-section video-content-width">
+            <div class="video-container">
+                                <div class="video">
+                                                        
+            <iframe title=""
+                class="main sproutvideo-player lazyload"
+                                    data-src="https://videos.sproutvideo.com/embed/aa9adab51c1de5c520/87ceacaaf71118c4?showControls=false&amp;transparent=true&amp;autoPlay=true&amp;loop=true&amp;volume=0&amp;volumeControl=false"
+                    data-load-mode="1"
+                                referrerpolicy='no-referrer-when-downgrade'
+                width="100%" height="446" frameborder="0" allowfullscreen=""></iframe>
+    
+                                    </div>
+            </div>
+        </div>
+    
+            
+                                            <div class="content-section text-full replaceHref" data-url="https://getvelasleep.com/offer-01-j/">
+            <p><span style="background-color:transparent;color:#000000;font-size:18px;">When your head and neck aren’t properly supported at night, your airway can become restricted, making it <strong>harder to breathe </strong>and leading to snoring throughout the night.</span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">That’s why </span><a href="http://link"><span style="background-color:transparent;color:#1155cc;font-size:18px;"><u>VelaSleep</u></span></a><span style="background-color:transparent;color:#000000;font-size:18px;">’s Cervical Decompression Design gently supports and positions your neck to <strong>specifically keep your airway open and free, all night long.</strong></span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">This allows for <strong>smoother breathing, quieter nights, and waking up feeling more rested </strong>— without keeping yourself or your partner awake.</span></p>
+        </div>
+    
+            
+                                                            <div class="content-section title-element">
+                        <h2>
+                3. It Works For All Types Of Sleepers (Side, Back &amp; Stomach)
+            </h2>
+        </div>
+    
+            
+                                            <div class="image-full content-section image-content-width">
+                        <a href="https://getvelasleep.com/offer-01-j/" class="with-query-params">
+                                                        
+            
+    
+                            
+                                                                                                                                        
+                                                                                        
+    <img alt="Vela Sleep 03"
+         class="image"
+         width="950"
+         height="563"
+         src="https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-03.jpg?width=611&amp;height=362&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85"
+         srcset="https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-03.jpg?width=611&amp;height=362&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 611w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-03.jpg?width=950&amp;height=563&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 950w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-03.jpg?width=1222&amp;height=724&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 1222w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-03.jpg?width=1900&amp;height=1126&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 1900w"
+         sizes="(min-width: 768px) 950px, 611px"
+         decoding="async"
+         loading="lazy"/>
+
+    
+                            </a>
+                                </div>
+    
+            
+                                            <div class="content-section text-full replaceHref" data-url="https://getvelasleep.com/offer-01-j/">
+            <p><span style="background-color:transparent;color:#000000;font-size:18px;">With VelaSleep, you don’t have to change how you sleep to feel better. The truth is, <strong>it doesn’t matter if you’re a back sleeper, side sleeper, stomach sleeper </strong>— most people switch between all three during the night anyway.</span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">The problem is, <strong>most pillows aren’t built for all positions, </strong>which leads to poor support and constant discomfort.</span></p><p><a href="http://link"><span style="background-color:transparent;color:#1155cc;font-size:18px;"><strong><u>VelaSleep’s cervical design</u></strong></span></a><span style="background-color:transparent;color:#000000;font-size:18px;"> helps maintain proper support and pressure relief no matter how you sleep, so your body stays comfortable and aligned all night long.</span></p>
+        </div>
+    
+            
+                                                            <div class="content-section title-element">
+                        <h2>
+                4. It Never Goes Flat — You Get The Same Exact Rejuvenating Neck &amp; Spine Support Every Single Night!
+            </h2>
+        </div>
+    
+            
+                                            <div class="image-full content-section image-content-width">
+                        <a href="https://getvelasleep.com/offer-01-j/" class="with-query-params">
+                                                        
+            
+    
+                            
+                                                                                                                                        
+                                                                                        
+    <img alt="Vela Sleep 04"
+         class="image"
+         width="950"
+         height="563"
+         src="https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-04.jpg?width=611&amp;height=362&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85"
+         srcset="https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-04.jpg?width=611&amp;height=362&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 611w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-04.jpg?width=950&amp;height=563&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 950w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-04.jpg?width=1222&amp;height=724&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 1222w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-04.jpg?width=1900&amp;height=1126&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 1900w"
+         sizes="(min-width: 768px) 950px, 611px"
+         decoding="async"
+         loading="lazy"/>
+
+    
+                            </a>
+                                </div>
+    
+            
+                                            <div class="content-section text-full replaceHref" data-url="https://getvelasleep.com/offer-01-j/">
+            <p><span style="background-color:transparent;color:#000000;font-size:18px;">Most pillows feel great at first… but after a few weeks, they start to <strong>flatten, lose shape, and stop providing the support </strong>your neck needs.</span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">That’s when the pain and poor sleep start creeping back in.</span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">On the other hand, </span><a href="http://link"><span style="background-color:transparent;color:#1155cc;font-size:18px;"><strong><u>VelaSleep</u></strong></span></a><span style="background-color:transparent;color:#000000;font-size:18px;"> is made with <strong>high-density memory foam </strong>that’s designed to hold its shape and provide consistent support over time. So instead of constantly replacing your pillow, you get the same comfort and support every night.</span></p>
+        </div>
+    
+            
+                                                            <div class="content-section title-element">
+                        <h2>
+                5. No More Waking Up Hot And Sweaty In The Middle Of The Night
+            </h2>
+        </div>
+    
+            
+                                            <div class="image-full content-section image-content-width">
+                        <a href="https://getvelasleep.com/offer-01-j/" class="with-query-params">
+                                                        
+            
+    
+                            
+                                                                                                                                        
+                                                                                        
+    <img alt="Vela Sleep 05"
+         class="image"
+         width="950"
+         height="563"
+         src="https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-05.jpg?width=611&amp;height=362&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85"
+         srcset="https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-05.jpg?width=611&amp;height=362&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 611w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-05.jpg?width=950&amp;height=563&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 950w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-05.jpg?width=1222&amp;height=724&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 1222w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-05.jpg?width=1900&amp;height=1126&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 1900w"
+         sizes="(min-width: 768px) 950px, 611px"
+         decoding="async"
+         loading="lazy"/>
+
+    
+                            </a>
+                                </div>
+    
+            
+                                            <div class="content-section text-full replaceHref" data-url="https://getvelasleep.com/offer-01-j/">
+            <p><span style="background-color:transparent;color:#000000;font-size:18px;">Traditional pillows <strong>trap heat while you sleep</strong>, causing you to wake up feeling hot, uncomfortable, sweaty, and <strong>constantly flipping your pillow to find the “cool side”.</strong></span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">This heat buildup isn’t just annoying — it can <strong>disrupt your sleep cycle </strong>and make it harder for your neck and spine to fully relax.</span></p><p><a href="http://link"><span style="background-color:transparent;color:#1155cc;font-size:18px;"><u>VelaSleep</u></span></a><span style="background-color:transparent;color:#000000;font-size:18px;"> is designed with a <strong>breathable, moisture-wicking cover </strong>that helps release trapped heat and keep air flowing throughout the night. Instead of overheating and battling your pillow all night, you stay cool, comfortable, and asleep longer. </span></p>
+        </div>
+    
+            
+                                                            <div class="content-section title-element">
+                        <h2>
+                6. It’s Made With Safe, Skin-Friendly Materials You Can Trust Every Night
+            </h2>
+        </div>
+    
+            
+                                            <div class="image-full content-section image-content-width">
+                        <a href="https://getvelasleep.com/offer-01-j/" class="with-query-params">
+                                                        
+            
+    
+                            
+                                                                                                                                        
+                                                                                        
+    <img alt="Vela Sleep 06"
+         class="image"
+         width="950"
+         height="563"
+         src="https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-06.jpg?width=611&amp;height=362&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85"
+         srcset="https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-06.jpg?width=611&amp;height=362&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 611w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-06.jpg?width=950&amp;height=563&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 950w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-06.jpg?width=1222&amp;height=724&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 1222w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-06.jpg?width=1900&amp;height=1126&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 1900w"
+         sizes="(min-width: 768px) 950px, 611px"
+         decoding="async"
+         loading="lazy"/>
+
+    
+                            </a>
+                                </div>
+    
+            
+                                            <div class="content-section text-full replaceHref" data-url="https://getvelasleep.com/offer-01-j/">
+            <p><span style="background-color:transparent;color:#000000;font-size:18px;">You spend hours every night with your face pressed against your pillow… so <strong>what your pillow is made of matters more than you realize.</strong></span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">Other pillows use low-quality materials that can trap dust, irritate your skin, or contain substances you wouldn’t want prolonged contact with… but VelaSleep features an </span><a href="http://link"><span style="background-color:transparent;color:#1155cc;font-size:18px;"><strong><u>OEKO-TEX® certified cover</u></strong></span></a><span style="background-color:transparent;color:#000000;font-size:18px;"> that’s tested for harmful substances and <strong>certified safe, breathable, and gentle on your skin.</strong></span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">That means you can finally TRULY relax and sleep comfortably knowing your pillow is <strong>clean, safe, and made for long-term use.</strong></span></p>
+        </div>
+    
+            
+                                                            <div class="content-section title-element">
+                        <h2>
+                7. It’s Soft As A Cloud… Yet Supportive Enough To Actually Fix Your Sleep
+            </h2>
+        </div>
+    
+            
+                                            <div class="image-full content-section image-content-width">
+                        <a href="https://getvelasleep.com/offer-01-j/" class="with-query-params">
+                                                        
+            
+    
+                            
+                                                                                                                                        
+                                                                                        
+    <img alt="Vela Sleep 07"
+         class="image"
+         width="950"
+         height="563"
+         src="https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-07.jpg?width=611&amp;height=362&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85"
+         srcset="https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-07.jpg?width=611&amp;height=362&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 611w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-07.jpg?width=950&amp;height=563&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 950w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-07.jpg?width=1222&amp;height=724&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 1222w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-07.jpg?width=1900&amp;height=1126&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 1900w"
+         sizes="(min-width: 768px) 950px, 611px"
+         decoding="async"
+         loading="lazy"/>
+
+    
+                            </a>
+                                </div>
+    
+            
+                                            <div class="content-section text-full replaceHref" data-url="https://getvelasleep.com/offer-01-j/">
+            <p><span style="background-color:transparent;color:#000000;font-size:18px;">The first time you see VelaSleep's contoured shape, you might guess that it'll feel firm or stiff… but the reality is the complete opposite — it's easily <strong>the most comfortable pillow you've ever slept on.</strong></span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">The premium memory foam has a soft, plush surface that <strong>feels luxurious and cloud-like under your head and neck. </strong>That means<strong> </strong></span><a href="http://link"><span style="background-color:transparent;color:#1155cc;font-size:18px;"><strong><u>VelaSleep</u></strong></span></a><span style="background-color:transparent;color:#000000;font-size:18px;"> isn’t flat like a cheap pillow or rigid like an orthopedic block — it's perfectly comfortable with a <strong>satisfying, “cradling” feeling</strong> that helps you fall asleep faster and stay asleep longer.</span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">Customers describe the sensation as the <strong>perfect balance of soft and supportive </strong>— far more pleasant than sleeping on a lumpy, flattened pillow that lost its shape months ago!</span></p>
+        </div>
+    
+            
+                                                            <div class="content-section title-element">
+                        <h2>
+                8. You Can Try It For 30 Nights — If You Don’t Love It, Get A Full Refund!
+            </h2>
+        </div>
+    
+            
+                                            <div class="image-full content-section image-content-width">
+                        <a href="https://getvelasleep.com/offer-01-j/" class="with-query-params">
+                                                        
+            
+    
+                            
+                                                                                                                                        
+                                                                                        
+    <img alt="Vela Sleep 08"
+         class="image"
+         width="950"
+         height="563"
+         src="https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-08.jpg?width=611&amp;height=362&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85"
+         srcset="https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-08.jpg?width=611&amp;height=362&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 611w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-08.jpg?width=950&amp;height=563&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 950w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-08.jpg?width=1222&amp;height=724&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 1222w, https://prod-assets.gu-plat.com/VelaSleep/VelaSleep-08.jpg?width=1900&amp;height=1126&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 1900w"
+         sizes="(min-width: 768px) 950px, 611px"
+         decoding="async"
+         loading="lazy"/>
+
+    
+                            </a>
+                                </div>
+    
+            
+                                            <div class="content-section text-full replaceHref" data-url="https://getvelasleep.com/offer-01-j/">
+            <p><span style="background-color:transparent;color:#000000;font-size:18px;">Here's the part we love: You don't have to commit right away.</span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">They allow every customer to </span><a href="http://link"><span style="background-color:transparent;color:#1155cc;font-size:18px;"><strong><u>try VelaSleep for 30 full nights, completely risk-free.</u></strong></span></a><span style="background-color:transparent;color:#000000;font-size:18px;"> If the revolutionary Cervical Decompression Design doesn’t help you wake up feeling more rested, more comfortable, and more pain-free, simply send it back for a 100% refund, no questions asked.</span></p><p><span style="background-color:transparent;color:#000000;font-size:18px;">If you're tired of waking up with a stiff neck, haven't found the right pillow despite years of searching, or feel like your sleep has suffered for too long, then you have to give VelaSleep a try — <strong>it could completely change the way you sleep.</strong></span></p>
+        </div>
+    
+            
+                                                                    
+                            <div class="reviews content-section">
+                <div class="review-top-info">
+                    <div class="review-title">Reviews</div>
+                                            <div class="rating-info">
+                            <div class="number">4.8</div>
+                            <div class="star-ratings">
+                                <div class="fill-ratings" style="width: calc(96%)">
+                                    <svg width="81" height="15" viewBox="0 0 79 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.91324 0.902849C7.09157 0.360509 7.90843 0.360509 8.08676 0.902849L9.4201 4.95783C9.49961 5.19966 9.73752 5.36458 10.0069 5.36458L14.3847 5.36458C14.9721 5.36458 15.2243 6.06524 14.7575 6.40038L11.1636 8.98054C10.9591 9.12738 10.8737 9.37849 10.9497 9.60958L12.3098 13.7459C12.4863 14.2828 11.8253 14.7161 11.3502 14.3749L7.87282 11.8784C7.65271 11.7204 7.34729 11.7204 7.12718 11.8784L3.64982 14.3749C3.17467 14.7161 2.51371 14.2828 2.69024 13.7459L4.05033 9.60958C4.12632 9.37849 4.04092 9.12738 3.83639 8.98054L0.242515 6.40038C-0.224296 6.06524 0.0278915 5.36458 0.615331 5.36458L4.99314 5.36458C5.26248 5.36458 5.50038 5.19966 5.5799 4.95783L6.91324 0.902849Z" />
+                                        <path d="M22.9132 0.902849C23.0916 0.360509 23.9084 0.360509 24.0868 0.902849L25.4201 4.95783C25.4996 5.19966 25.7375 5.36458 26.0069 5.36458L30.3847 5.36458C30.9721 5.36458 31.2243 6.06524 30.7575 6.40038L27.1636 8.98054C26.9591 9.12738 26.8737 9.37849 26.9497 9.60958L28.3098 13.7459C28.4863 14.2828 27.8253 14.7161 27.3502 14.3749L23.8728 11.8784C23.6527 11.7204 23.3473 11.7204 23.1272 11.8784L19.6498 14.3749C19.1747 14.7161 18.5137 14.2828 18.6902 13.7459L20.0503 9.60958C20.1263 9.37849 20.0409 9.12738 19.8364 8.98054L16.2425 6.40038C15.7757 6.06524 16.0279 5.36458 16.6153 5.36458L20.9931 5.36458C21.2625 5.36458 21.5004 5.19966 21.5799 4.95783L22.9132 0.902849Z" />
+                                        <path d="M38.9132 0.902849C39.0916 0.360509 39.9084 0.360509 40.0868 0.902849L41.4201 4.95783C41.4996 5.19966 41.7375 5.36458 42.0069 5.36458L46.3847 5.36458C46.9721 5.36458 47.2243 6.06524 46.7575 6.40038L43.1636 8.98054C42.9591 9.12738 42.8737 9.37849 42.9497 9.60958L44.3098 13.7459C44.4863 14.2828 43.8253 14.7161 43.3502 14.3749L39.8728 11.8784C39.6527 11.7204 39.3473 11.7204 39.1272 11.8784L35.6498 14.3749C35.1747 14.7161 34.5137 14.2828 34.6902 13.7459L36.0503 9.60958C36.1263 9.37849 36.0409 9.12738 35.8364 8.98054L32.2425 6.40038C31.7757 6.06524 32.0279 5.36458 32.6153 5.36458L36.9931 5.36458C37.2625 5.36458 37.5004 5.19966 37.5799 4.95783L38.9132 0.902849Z" />
+                                        <path d="M54.9132 0.902849C55.0916 0.360509 55.9084 0.360509 56.0868 0.902849L57.4201 4.95783C57.4996 5.19966 57.7375 5.36458 58.0069 5.36458L62.3847 5.36458C62.9721 5.36458 63.2243 6.06524 62.7575 6.40038L59.1636 8.98054C58.9591 9.12738 58.8737 9.37849 58.9497 9.60958L60.3098 13.7459C60.4863 14.2828 59.8253 14.7161 59.3502 14.3749L55.8728 11.8784C55.6527 11.7204 55.3473 11.7204 55.1272 11.8784L51.6498 14.3749C51.1747 14.7161 50.5137 14.2828 50.6902 13.7459L52.0503 9.60958C52.1263 9.37849 52.0409 9.12738 51.8364 8.98054L48.2425 6.40038C47.7757 6.06524 48.0279 5.36458 48.6153 5.36458L52.9931 5.36458C53.2625 5.36458 53.5004 5.19966 53.5799 4.95783L54.9132 0.902849Z" />
+                                        <path d="M70.9132 0.902849C71.0916 0.360509 71.9084 0.360509 72.0868 0.902849L73.4201 4.95783C73.4996 5.19966 73.7375 5.36458 74.0069 5.36458L78.3847 5.36458C78.9721 5.36458 79.2243 6.06524 78.7575 6.40038L75.1636 8.98054C74.9591 9.12738 74.8737 9.37849 74.9497 9.60958L76.3098 13.7459C76.4863 14.2828 75.8253 14.7161 75.3502 14.3749L71.8728 11.8784C71.6527 11.7204 71.3473 11.7204 71.1272 11.8784L67.6498 14.3749C67.1747 14.7161 66.5137 14.2828 66.6902 13.7459L68.0503 9.60958C68.1263 9.37849 68.0409 9.12738 67.8364 8.98054L64.2425 6.40038C63.7757 6.06524 64.0279 5.36458 64.6153 5.36458L68.9931 5.36458C69.2625 5.36458 69.5004 5.19966 69.5799 4.95783L70.9132 0.902849Z" />
+                                    </svg>
+                                </div>
+                                <div class="empty-ratings">
+                                    <svg width="81" height="15" viewBox="0 0 79 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.91324 0.902849C7.09157 0.360509 7.90843 0.360509 8.08676 0.902849L9.4201 4.95783C9.49961 5.19966 9.73752 5.36458 10.0069 5.36458L14.3847 5.36458C14.9721 5.36458 15.2243 6.06524 14.7575 6.40038L11.1636 8.98054C10.9591 9.12738 10.8737 9.37849 10.9497 9.60958L12.3098 13.7459C12.4863 14.2828 11.8253 14.7161 11.3502 14.3749L7.87282 11.8784C7.65271 11.7204 7.34729 11.7204 7.12718 11.8784L3.64982 14.3749C3.17467 14.7161 2.51371 14.2828 2.69024 13.7459L4.05033 9.60958C4.12632 9.37849 4.04092 9.12738 3.83639 8.98054L0.242515 6.40038C-0.224296 6.06524 0.0278915 5.36458 0.615331 5.36458L4.99314 5.36458C5.26248 5.36458 5.50038 5.19966 5.5799 4.95783L6.91324 0.902849Z" />
+                                        <path d="M22.9132 0.902849C23.0916 0.360509 23.9084 0.360509 24.0868 0.902849L25.4201 4.95783C25.4996 5.19966 25.7375 5.36458 26.0069 5.36458L30.3847 5.36458C30.9721 5.36458 31.2243 6.06524 30.7575 6.40038L27.1636 8.98054C26.9591 9.12738 26.8737 9.37849 26.9497 9.60958L28.3098 13.7459C28.4863 14.2828 27.8253 14.7161 27.3502 14.3749L23.8728 11.8784C23.6527 11.7204 23.3473 11.7204 23.1272 11.8784L19.6498 14.3749C19.1747 14.7161 18.5137 14.2828 18.6902 13.7459L20.0503 9.60958C20.1263 9.37849 20.0409 9.12738 19.8364 8.98054L16.2425 6.40038C15.7757 6.06524 16.0279 5.36458 16.6153 5.36458L20.9931 5.36458C21.2625 5.36458 21.5004 5.19966 21.5799 4.95783L22.9132 0.902849Z" />
+                                        <path d="M38.9132 0.902849C39.0916 0.360509 39.9084 0.360509 40.0868 0.902849L41.4201 4.95783C41.4996 5.19966 41.7375 5.36458 42.0069 5.36458L46.3847 5.36458C46.9721 5.36458 47.2243 6.06524 46.7575 6.40038L43.1636 8.98054C42.9591 9.12738 42.8737 9.37849 42.9497 9.60958L44.3098 13.7459C44.4863 14.2828 43.8253 14.7161 43.3502 14.3749L39.8728 11.8784C39.6527 11.7204 39.3473 11.7204 39.1272 11.8784L35.6498 14.3749C35.1747 14.7161 34.5137 14.2828 34.6902 13.7459L36.0503 9.60958C36.1263 9.37849 36.0409 9.12738 35.8364 8.98054L32.2425 6.40038C31.7757 6.06524 32.0279 5.36458 32.6153 5.36458L36.9931 5.36458C37.2625 5.36458 37.5004 5.19966 37.5799 4.95783L38.9132 0.902849Z" />
+                                        <path d="M54.9132 0.902849C55.0916 0.360509 55.9084 0.360509 56.0868 0.902849L57.4201 4.95783C57.4996 5.19966 57.7375 5.36458 58.0069 5.36458L62.3847 5.36458C62.9721 5.36458 63.2243 6.06524 62.7575 6.40038L59.1636 8.98054C58.9591 9.12738 58.8737 9.37849 58.9497 9.60958L60.3098 13.7459C60.4863 14.2828 59.8253 14.7161 59.3502 14.3749L55.8728 11.8784C55.6527 11.7204 55.3473 11.7204 55.1272 11.8784L51.6498 14.3749C51.1747 14.7161 50.5137 14.2828 50.6902 13.7459L52.0503 9.60958C52.1263 9.37849 52.0409 9.12738 51.8364 8.98054L48.2425 6.40038C47.7757 6.06524 48.0279 5.36458 48.6153 5.36458L52.9931 5.36458C53.2625 5.36458 53.5004 5.19966 53.5799 4.95783L54.9132 0.902849Z" />
+                                        <path d="M70.9132 0.902849C71.0916 0.360509 71.9084 0.360509 72.0868 0.902849L73.4201 4.95783C73.4996 5.19966 73.7375 5.36458 74.0069 5.36458L78.3847 5.36458C78.9721 5.36458 79.2243 6.06524 78.7575 6.40038L75.1636 8.98054C74.9591 9.12738 74.8737 9.37849 74.9497 9.60958L76.3098 13.7459C76.4863 14.2828 75.8253 14.7161 75.3502 14.3749L71.8728 11.8784C71.6527 11.7204 71.3473 11.7204 71.1272 11.8784L67.6498 14.3749C67.1747 14.7161 66.5137 14.2828 66.6902 13.7459L68.0503 9.60958C68.1263 9.37849 68.0409 9.12738 67.8364 8.98054L64.2425 6.40038C63.7757 6.06524 64.0279 5.36458 64.6153 5.36458L68.9931 5.36458C69.2625 5.36458 69.5004 5.19966 69.5799 4.95783L70.9132 0.902849Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="amount">Based on  reviews</div>
+                        </div>
+                                    </div>
+                <div class="reviews-card-wrapper">
+                                                                    <div class="review-card">
+                                                        <div class="review-content">
+                                <div class="star-ratings">
+                                <div class="fill-ratings" style="width: calc(100%)">
+                                    <svg width="81" height="15" viewBox="0 0 79 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.91324 0.902849C7.09157 0.360509 7.90843 0.360509 8.08676 0.902849L9.4201 4.95783C9.49961 5.19966 9.73752 5.36458 10.0069 5.36458L14.3847 5.36458C14.9721 5.36458 15.2243 6.06524 14.7575 6.40038L11.1636 8.98054C10.9591 9.12738 10.8737 9.37849 10.9497 9.60958L12.3098 13.7459C12.4863 14.2828 11.8253 14.7161 11.3502 14.3749L7.87282 11.8784C7.65271 11.7204 7.34729 11.7204 7.12718 11.8784L3.64982 14.3749C3.17467 14.7161 2.51371 14.2828 2.69024 13.7459L4.05033 9.60958C4.12632 9.37849 4.04092 9.12738 3.83639 8.98054L0.242515 6.40038C-0.224296 6.06524 0.0278915 5.36458 0.615331 5.36458L4.99314 5.36458C5.26248 5.36458 5.50038 5.19966 5.5799 4.95783L6.91324 0.902849Z" fill="#000" stroke="#000" />
+                                        <path d="M22.9132 0.902849C23.0916 0.360509 23.9084 0.360509 24.0868 0.902849L25.4201 4.95783C25.4996 5.19966 25.7375 5.36458 26.0069 5.36458L30.3847 5.36458C30.9721 5.36458 31.2243 6.06524 30.7575 6.40038L27.1636 8.98054C26.9591 9.12738 26.8737 9.37849 26.9497 9.60958L28.3098 13.7459C28.4863 14.2828 27.8253 14.7161 27.3502 14.3749L23.8728 11.8784C23.6527 11.7204 23.3473 11.7204 23.1272 11.8784L19.6498 14.3749C19.1747 14.7161 18.5137 14.2828 18.6902 13.7459L20.0503 9.60958C20.1263 9.37849 20.0409 9.12738 19.8364 8.98054L16.2425 6.40038C15.7757 6.06524 16.0279 5.36458 16.6153 5.36458L20.9931 5.36458C21.2625 5.36458 21.5004 5.19966 21.5799 4.95783L22.9132 0.902849Z" />
+                                        <path d="M38.9132 0.902849C39.0916 0.360509 39.9084 0.360509 40.0868 0.902849L41.4201 4.95783C41.4996 5.19966 41.7375 5.36458 42.0069 5.36458L46.3847 5.36458C46.9721 5.36458 47.2243 6.06524 46.7575 6.40038L43.1636 8.98054C42.9591 9.12738 42.8737 9.37849 42.9497 9.60958L44.3098 13.7459C44.4863 14.2828 43.8253 14.7161 43.3502 14.3749L39.8728 11.8784C39.6527 11.7204 39.3473 11.7204 39.1272 11.8784L35.6498 14.3749C35.1747 14.7161 34.5137 14.2828 34.6902 13.7459L36.0503 9.60958C36.1263 9.37849 36.0409 9.12738 35.8364 8.98054L32.2425 6.40038C31.7757 6.06524 32.0279 5.36458 32.6153 5.36458L36.9931 5.36458C37.2625 5.36458 37.5004 5.19966 37.5799 4.95783L38.9132 0.902849Z" />
+                                        <path d="M54.9132 0.902849C55.0916 0.360509 55.9084 0.360509 56.0868 0.902849L57.4201 4.95783C57.4996 5.19966 57.7375 5.36458 58.0069 5.36458L62.3847 5.36458C62.9721 5.36458 63.2243 6.06524 62.7575 6.40038L59.1636 8.98054C58.9591 9.12738 58.8737 9.37849 58.9497 9.60958L60.3098 13.7459C60.4863 14.2828 59.8253 14.7161 59.3502 14.3749L55.8728 11.8784C55.6527 11.7204 55.3473 11.7204 55.1272 11.8784L51.6498 14.3749C51.1747 14.7161 50.5137 14.2828 50.6902 13.7459L52.0503 9.60958C52.1263 9.37849 52.0409 9.12738 51.8364 8.98054L48.2425 6.40038C47.7757 6.06524 48.0279 5.36458 48.6153 5.36458L52.9931 5.36458C53.2625 5.36458 53.5004 5.19966 53.5799 4.95783L54.9132 0.902849Z" />
+                                        <path d="M70.9132 0.902849C71.0916 0.360509 71.9084 0.360509 72.0868 0.902849L73.4201 4.95783C73.4996 5.19966 73.7375 5.36458 74.0069 5.36458L78.3847 5.36458C78.9721 5.36458 79.2243 6.06524 78.7575 6.40038L75.1636 8.98054C74.9591 9.12738 74.8737 9.37849 74.9497 9.60958L76.3098 13.7459C76.4863 14.2828 75.8253 14.7161 75.3502 14.3749L71.8728 11.8784C71.6527 11.7204 71.3473 11.7204 71.1272 11.8784L67.6498 14.3749C67.1747 14.7161 66.5137 14.2828 66.6902 13.7459L68.0503 9.60958C68.1263 9.37849 68.0409 9.12738 67.8364 8.98054L64.2425 6.40038C63.7757 6.06524 64.0279 5.36458 64.6153 5.36458L68.9931 5.36458C69.2625 5.36458 69.5004 5.19966 69.5799 4.95783L70.9132 0.902849Z" />
+                                    </svg>
+                                </div>
+                                <div class="empty-ratings">
+                                    <svg width="81" height="15" viewBox="0 0 79 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.91324 0.902849C7.09157 0.360509 7.90843 0.360509 8.08676 0.902849L9.4201 4.95783C9.49961 5.19966 9.73752 5.36458 10.0069 5.36458L14.3847 5.36458C14.9721 5.36458 15.2243 6.06524 14.7575 6.40038L11.1636 8.98054C10.9591 9.12738 10.8737 9.37849 10.9497 9.60958L12.3098 13.7459C12.4863 14.2828 11.8253 14.7161 11.3502 14.3749L7.87282 11.8784C7.65271 11.7204 7.34729 11.7204 7.12718 11.8784L3.64982 14.3749C3.17467 14.7161 2.51371 14.2828 2.69024 13.7459L4.05033 9.60958C4.12632 9.37849 4.04092 9.12738 3.83639 8.98054L0.242515 6.40038C-0.224296 6.06524 0.0278915 5.36458 0.615331 5.36458L4.99314 5.36458C5.26248 5.36458 5.50038 5.19966 5.5799 4.95783L6.91324 0.902849Z" />
+                                        <path d="M22.9132 0.902849C23.0916 0.360509 23.9084 0.360509 24.0868 0.902849L25.4201 4.95783C25.4996 5.19966 25.7375 5.36458 26.0069 5.36458L30.3847 5.36458C30.9721 5.36458 31.2243 6.06524 30.7575 6.40038L27.1636 8.98054C26.9591 9.12738 26.8737 9.37849 26.9497 9.60958L28.3098 13.7459C28.4863 14.2828 27.8253 14.7161 27.3502 14.3749L23.8728 11.8784C23.6527 11.7204 23.3473 11.7204 23.1272 11.8784L19.6498 14.3749C19.1747 14.7161 18.5137 14.2828 18.6902 13.7459L20.0503 9.60958C20.1263 9.37849 20.0409 9.12738 19.8364 8.98054L16.2425 6.40038C15.7757 6.06524 16.0279 5.36458 16.6153 5.36458L20.9931 5.36458C21.2625 5.36458 21.5004 5.19966 21.5799 4.95783L22.9132 0.902849Z" />
+                                        <path d="M38.9132 0.902849C39.0916 0.360509 39.9084 0.360509 40.0868 0.902849L41.4201 4.95783C41.4996 5.19966 41.7375 5.36458 42.0069 5.36458L46.3847 5.36458C46.9721 5.36458 47.2243 6.06524 46.7575 6.40038L43.1636 8.98054C42.9591 9.12738 42.8737 9.37849 42.9497 9.60958L44.3098 13.7459C44.4863 14.2828 43.8253 14.7161 43.3502 14.3749L39.8728 11.8784C39.6527 11.7204 39.3473 11.7204 39.1272 11.8784L35.6498 14.3749C35.1747 14.7161 34.5137 14.2828 34.6902 13.7459L36.0503 9.60958C36.1263 9.37849 36.0409 9.12738 35.8364 8.98054L32.2425 6.40038C31.7757 6.06524 32.0279 5.36458 32.6153 5.36458L36.9931 5.36458C37.2625 5.36458 37.5004 5.19966 37.5799 4.95783L38.9132 0.902849Z" />
+                                        <path d="M54.9132 0.902849C55.0916 0.360509 55.9084 0.360509 56.0868 0.902849L57.4201 4.95783C57.4996 5.19966 57.7375 5.36458 58.0069 5.36458L62.3847 5.36458C62.9721 5.36458 63.2243 6.06524 62.7575 6.40038L59.1636 8.98054C58.9591 9.12738 58.8737 9.37849 58.9497 9.60958L60.3098 13.7459C60.4863 14.2828 59.8253 14.7161 59.3502 14.3749L55.8728 11.8784C55.6527 11.7204 55.3473 11.7204 55.1272 11.8784L51.6498 14.3749C51.1747 14.7161 50.5137 14.2828 50.6902 13.7459L52.0503 9.60958C52.1263 9.37849 52.0409 9.12738 51.8364 8.98054L48.2425 6.40038C47.7757 6.06524 48.0279 5.36458 48.6153 5.36458L52.9931 5.36458C53.2625 5.36458 53.5004 5.19966 53.5799 4.95783L54.9132 0.902849Z" />
+                                        <path d="M70.9132 0.902849C71.0916 0.360509 71.9084 0.360509 72.0868 0.902849L73.4201 4.95783C73.4996 5.19966 73.7375 5.36458 74.0069 5.36458L78.3847 5.36458C78.9721 5.36458 79.2243 6.06524 78.7575 6.40038L75.1636 8.98054C74.9591 9.12738 74.8737 9.37849 74.9497 9.60958L76.3098 13.7459C76.4863 14.2828 75.8253 14.7161 75.3502 14.3749L71.8728 11.8784C71.6527 11.7204 71.3473 11.7204 71.1272 11.8784L67.6498 14.3749C67.1747 14.7161 66.5137 14.2828 66.6902 13.7459L68.0503 9.60958C68.1263 9.37849 68.0409 9.12738 67.8364 8.98054L64.2425 6.40038C63.7757 6.06524 64.0279 5.36458 64.6153 5.36458L68.9931 5.36458C69.2625 5.36458 69.5004 5.19966 69.5799 4.95783L70.9132 0.902849Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                                <div class="review-title">
+                                                                    Sleeping So Much More Peacefully
+                                                            </div>
+                                <div class="review-text replaceHref" data-url="https://getvelasleep.com/offer-01-j/">
+                                <p>"Since switching to Velasleep, my nights have become noticeably quieter and more restful. The contoured shape keeps my head and neck in a natural position, and I wake up feeling refreshed instead of stiff. My partner has also commented that my snoring has reduced, which is a huge bonus for both of us."</p><p><strong>James F.</strong></p>
+                            </div>
+                            </div>
+                        </div>
+                                                                    <div class="review-card">
+                                                        <div class="review-content">
+                                <div class="star-ratings">
+                                <div class="fill-ratings" style="width: calc(100%)">
+                                    <svg width="81" height="15" viewBox="0 0 79 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.91324 0.902849C7.09157 0.360509 7.90843 0.360509 8.08676 0.902849L9.4201 4.95783C9.49961 5.19966 9.73752 5.36458 10.0069 5.36458L14.3847 5.36458C14.9721 5.36458 15.2243 6.06524 14.7575 6.40038L11.1636 8.98054C10.9591 9.12738 10.8737 9.37849 10.9497 9.60958L12.3098 13.7459C12.4863 14.2828 11.8253 14.7161 11.3502 14.3749L7.87282 11.8784C7.65271 11.7204 7.34729 11.7204 7.12718 11.8784L3.64982 14.3749C3.17467 14.7161 2.51371 14.2828 2.69024 13.7459L4.05033 9.60958C4.12632 9.37849 4.04092 9.12738 3.83639 8.98054L0.242515 6.40038C-0.224296 6.06524 0.0278915 5.36458 0.615331 5.36458L4.99314 5.36458C5.26248 5.36458 5.50038 5.19966 5.5799 4.95783L6.91324 0.902849Z" fill="#000" stroke="#000" />
+                                        <path d="M22.9132 0.902849C23.0916 0.360509 23.9084 0.360509 24.0868 0.902849L25.4201 4.95783C25.4996 5.19966 25.7375 5.36458 26.0069 5.36458L30.3847 5.36458C30.9721 5.36458 31.2243 6.06524 30.7575 6.40038L27.1636 8.98054C26.9591 9.12738 26.8737 9.37849 26.9497 9.60958L28.3098 13.7459C28.4863 14.2828 27.8253 14.7161 27.3502 14.3749L23.8728 11.8784C23.6527 11.7204 23.3473 11.7204 23.1272 11.8784L19.6498 14.3749C19.1747 14.7161 18.5137 14.2828 18.6902 13.7459L20.0503 9.60958C20.1263 9.37849 20.0409 9.12738 19.8364 8.98054L16.2425 6.40038C15.7757 6.06524 16.0279 5.36458 16.6153 5.36458L20.9931 5.36458C21.2625 5.36458 21.5004 5.19966 21.5799 4.95783L22.9132 0.902849Z" />
+                                        <path d="M38.9132 0.902849C39.0916 0.360509 39.9084 0.360509 40.0868 0.902849L41.4201 4.95783C41.4996 5.19966 41.7375 5.36458 42.0069 5.36458L46.3847 5.36458C46.9721 5.36458 47.2243 6.06524 46.7575 6.40038L43.1636 8.98054C42.9591 9.12738 42.8737 9.37849 42.9497 9.60958L44.3098 13.7459C44.4863 14.2828 43.8253 14.7161 43.3502 14.3749L39.8728 11.8784C39.6527 11.7204 39.3473 11.7204 39.1272 11.8784L35.6498 14.3749C35.1747 14.7161 34.5137 14.2828 34.6902 13.7459L36.0503 9.60958C36.1263 9.37849 36.0409 9.12738 35.8364 8.98054L32.2425 6.40038C31.7757 6.06524 32.0279 5.36458 32.6153 5.36458L36.9931 5.36458C37.2625 5.36458 37.5004 5.19966 37.5799 4.95783L38.9132 0.902849Z" />
+                                        <path d="M54.9132 0.902849C55.0916 0.360509 55.9084 0.360509 56.0868 0.902849L57.4201 4.95783C57.4996 5.19966 57.7375 5.36458 58.0069 5.36458L62.3847 5.36458C62.9721 5.36458 63.2243 6.06524 62.7575 6.40038L59.1636 8.98054C58.9591 9.12738 58.8737 9.37849 58.9497 9.60958L60.3098 13.7459C60.4863 14.2828 59.8253 14.7161 59.3502 14.3749L55.8728 11.8784C55.6527 11.7204 55.3473 11.7204 55.1272 11.8784L51.6498 14.3749C51.1747 14.7161 50.5137 14.2828 50.6902 13.7459L52.0503 9.60958C52.1263 9.37849 52.0409 9.12738 51.8364 8.98054L48.2425 6.40038C47.7757 6.06524 48.0279 5.36458 48.6153 5.36458L52.9931 5.36458C53.2625 5.36458 53.5004 5.19966 53.5799 4.95783L54.9132 0.902849Z" />
+                                        <path d="M70.9132 0.902849C71.0916 0.360509 71.9084 0.360509 72.0868 0.902849L73.4201 4.95783C73.4996 5.19966 73.7375 5.36458 74.0069 5.36458L78.3847 5.36458C78.9721 5.36458 79.2243 6.06524 78.7575 6.40038L75.1636 8.98054C74.9591 9.12738 74.8737 9.37849 74.9497 9.60958L76.3098 13.7459C76.4863 14.2828 75.8253 14.7161 75.3502 14.3749L71.8728 11.8784C71.6527 11.7204 71.3473 11.7204 71.1272 11.8784L67.6498 14.3749C67.1747 14.7161 66.5137 14.2828 66.6902 13.7459L68.0503 9.60958C68.1263 9.37849 68.0409 9.12738 67.8364 8.98054L64.2425 6.40038C63.7757 6.06524 64.0279 5.36458 64.6153 5.36458L68.9931 5.36458C69.2625 5.36458 69.5004 5.19966 69.5799 4.95783L70.9132 0.902849Z" />
+                                    </svg>
+                                </div>
+                                <div class="empty-ratings">
+                                    <svg width="81" height="15" viewBox="0 0 79 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.91324 0.902849C7.09157 0.360509 7.90843 0.360509 8.08676 0.902849L9.4201 4.95783C9.49961 5.19966 9.73752 5.36458 10.0069 5.36458L14.3847 5.36458C14.9721 5.36458 15.2243 6.06524 14.7575 6.40038L11.1636 8.98054C10.9591 9.12738 10.8737 9.37849 10.9497 9.60958L12.3098 13.7459C12.4863 14.2828 11.8253 14.7161 11.3502 14.3749L7.87282 11.8784C7.65271 11.7204 7.34729 11.7204 7.12718 11.8784L3.64982 14.3749C3.17467 14.7161 2.51371 14.2828 2.69024 13.7459L4.05033 9.60958C4.12632 9.37849 4.04092 9.12738 3.83639 8.98054L0.242515 6.40038C-0.224296 6.06524 0.0278915 5.36458 0.615331 5.36458L4.99314 5.36458C5.26248 5.36458 5.50038 5.19966 5.5799 4.95783L6.91324 0.902849Z" />
+                                        <path d="M22.9132 0.902849C23.0916 0.360509 23.9084 0.360509 24.0868 0.902849L25.4201 4.95783C25.4996 5.19966 25.7375 5.36458 26.0069 5.36458L30.3847 5.36458C30.9721 5.36458 31.2243 6.06524 30.7575 6.40038L27.1636 8.98054C26.9591 9.12738 26.8737 9.37849 26.9497 9.60958L28.3098 13.7459C28.4863 14.2828 27.8253 14.7161 27.3502 14.3749L23.8728 11.8784C23.6527 11.7204 23.3473 11.7204 23.1272 11.8784L19.6498 14.3749C19.1747 14.7161 18.5137 14.2828 18.6902 13.7459L20.0503 9.60958C20.1263 9.37849 20.0409 9.12738 19.8364 8.98054L16.2425 6.40038C15.7757 6.06524 16.0279 5.36458 16.6153 5.36458L20.9931 5.36458C21.2625 5.36458 21.5004 5.19966 21.5799 4.95783L22.9132 0.902849Z" />
+                                        <path d="M38.9132 0.902849C39.0916 0.360509 39.9084 0.360509 40.0868 0.902849L41.4201 4.95783C41.4996 5.19966 41.7375 5.36458 42.0069 5.36458L46.3847 5.36458C46.9721 5.36458 47.2243 6.06524 46.7575 6.40038L43.1636 8.98054C42.9591 9.12738 42.8737 9.37849 42.9497 9.60958L44.3098 13.7459C44.4863 14.2828 43.8253 14.7161 43.3502 14.3749L39.8728 11.8784C39.6527 11.7204 39.3473 11.7204 39.1272 11.8784L35.6498 14.3749C35.1747 14.7161 34.5137 14.2828 34.6902 13.7459L36.0503 9.60958C36.1263 9.37849 36.0409 9.12738 35.8364 8.98054L32.2425 6.40038C31.7757 6.06524 32.0279 5.36458 32.6153 5.36458L36.9931 5.36458C37.2625 5.36458 37.5004 5.19966 37.5799 4.95783L38.9132 0.902849Z" />
+                                        <path d="M54.9132 0.902849C55.0916 0.360509 55.9084 0.360509 56.0868 0.902849L57.4201 4.95783C57.4996 5.19966 57.7375 5.36458 58.0069 5.36458L62.3847 5.36458C62.9721 5.36458 63.2243 6.06524 62.7575 6.40038L59.1636 8.98054C58.9591 9.12738 58.8737 9.37849 58.9497 9.60958L60.3098 13.7459C60.4863 14.2828 59.8253 14.7161 59.3502 14.3749L55.8728 11.8784C55.6527 11.7204 55.3473 11.7204 55.1272 11.8784L51.6498 14.3749C51.1747 14.7161 50.5137 14.2828 50.6902 13.7459L52.0503 9.60958C52.1263 9.37849 52.0409 9.12738 51.8364 8.98054L48.2425 6.40038C47.7757 6.06524 48.0279 5.36458 48.6153 5.36458L52.9931 5.36458C53.2625 5.36458 53.5004 5.19966 53.5799 4.95783L54.9132 0.902849Z" />
+                                        <path d="M70.9132 0.902849C71.0916 0.360509 71.9084 0.360509 72.0868 0.902849L73.4201 4.95783C73.4996 5.19966 73.7375 5.36458 74.0069 5.36458L78.3847 5.36458C78.9721 5.36458 79.2243 6.06524 78.7575 6.40038L75.1636 8.98054C74.9591 9.12738 74.8737 9.37849 74.9497 9.60958L76.3098 13.7459C76.4863 14.2828 75.8253 14.7161 75.3502 14.3749L71.8728 11.8784C71.6527 11.7204 71.3473 11.7204 71.1272 11.8784L67.6498 14.3749C67.1747 14.7161 66.5137 14.2828 66.6902 13.7459L68.0503 9.60958C68.1263 9.37849 68.0409 9.12738 67.8364 8.98054L64.2425 6.40038C63.7757 6.06524 64.0279 5.36458 64.6153 5.36458L68.9931 5.36458C69.2625 5.36458 69.5004 5.19966 69.5799 4.95783L70.9132 0.902849Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                                <div class="review-title">
+                                                                    Excellent Neck and Airway Support
+                                                            </div>
+                                <div class="review-text replaceHref" data-url="https://getvelasleep.com/offer-01-j/">
+                                <p>"What I appreciate most about Velasleep is how well it supports my neck while gently aligning my jaw. It feels like my airways stay more open throughout the night, and I don’t wake up feeling congested or strained. The memory foam is supportive without feeling too firm."</p><p><strong>Joni E.</strong></p>
+                            </div>
+                            </div>
+                        </div>
+                                                                    <div class="review-card">
+                                                        <div class="review-content">
+                                <div class="star-ratings">
+                                <div class="fill-ratings" style="width: calc(100%)">
+                                    <svg width="81" height="15" viewBox="0 0 79 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.91324 0.902849C7.09157 0.360509 7.90843 0.360509 8.08676 0.902849L9.4201 4.95783C9.49961 5.19966 9.73752 5.36458 10.0069 5.36458L14.3847 5.36458C14.9721 5.36458 15.2243 6.06524 14.7575 6.40038L11.1636 8.98054C10.9591 9.12738 10.8737 9.37849 10.9497 9.60958L12.3098 13.7459C12.4863 14.2828 11.8253 14.7161 11.3502 14.3749L7.87282 11.8784C7.65271 11.7204 7.34729 11.7204 7.12718 11.8784L3.64982 14.3749C3.17467 14.7161 2.51371 14.2828 2.69024 13.7459L4.05033 9.60958C4.12632 9.37849 4.04092 9.12738 3.83639 8.98054L0.242515 6.40038C-0.224296 6.06524 0.0278915 5.36458 0.615331 5.36458L4.99314 5.36458C5.26248 5.36458 5.50038 5.19966 5.5799 4.95783L6.91324 0.902849Z" fill="#000" stroke="#000" />
+                                        <path d="M22.9132 0.902849C23.0916 0.360509 23.9084 0.360509 24.0868 0.902849L25.4201 4.95783C25.4996 5.19966 25.7375 5.36458 26.0069 5.36458L30.3847 5.36458C30.9721 5.36458 31.2243 6.06524 30.7575 6.40038L27.1636 8.98054C26.9591 9.12738 26.8737 9.37849 26.9497 9.60958L28.3098 13.7459C28.4863 14.2828 27.8253 14.7161 27.3502 14.3749L23.8728 11.8784C23.6527 11.7204 23.3473 11.7204 23.1272 11.8784L19.6498 14.3749C19.1747 14.7161 18.5137 14.2828 18.6902 13.7459L20.0503 9.60958C20.1263 9.37849 20.0409 9.12738 19.8364 8.98054L16.2425 6.40038C15.7757 6.06524 16.0279 5.36458 16.6153 5.36458L20.9931 5.36458C21.2625 5.36458 21.5004 5.19966 21.5799 4.95783L22.9132 0.902849Z" />
+                                        <path d="M38.9132 0.902849C39.0916 0.360509 39.9084 0.360509 40.0868 0.902849L41.4201 4.95783C41.4996 5.19966 41.7375 5.36458 42.0069 5.36458L46.3847 5.36458C46.9721 5.36458 47.2243 6.06524 46.7575 6.40038L43.1636 8.98054C42.9591 9.12738 42.8737 9.37849 42.9497 9.60958L44.3098 13.7459C44.4863 14.2828 43.8253 14.7161 43.3502 14.3749L39.8728 11.8784C39.6527 11.7204 39.3473 11.7204 39.1272 11.8784L35.6498 14.3749C35.1747 14.7161 34.5137 14.2828 34.6902 13.7459L36.0503 9.60958C36.1263 9.37849 36.0409 9.12738 35.8364 8.98054L32.2425 6.40038C31.7757 6.06524 32.0279 5.36458 32.6153 5.36458L36.9931 5.36458C37.2625 5.36458 37.5004 5.19966 37.5799 4.95783L38.9132 0.902849Z" />
+                                        <path d="M54.9132 0.902849C55.0916 0.360509 55.9084 0.360509 56.0868 0.902849L57.4201 4.95783C57.4996 5.19966 57.7375 5.36458 58.0069 5.36458L62.3847 5.36458C62.9721 5.36458 63.2243 6.06524 62.7575 6.40038L59.1636 8.98054C58.9591 9.12738 58.8737 9.37849 58.9497 9.60958L60.3098 13.7459C60.4863 14.2828 59.8253 14.7161 59.3502 14.3749L55.8728 11.8784C55.6527 11.7204 55.3473 11.7204 55.1272 11.8784L51.6498 14.3749C51.1747 14.7161 50.5137 14.2828 50.6902 13.7459L52.0503 9.60958C52.1263 9.37849 52.0409 9.12738 51.8364 8.98054L48.2425 6.40038C47.7757 6.06524 48.0279 5.36458 48.6153 5.36458L52.9931 5.36458C53.2625 5.36458 53.5004 5.19966 53.5799 4.95783L54.9132 0.902849Z" />
+                                        <path d="M70.9132 0.902849C71.0916 0.360509 71.9084 0.360509 72.0868 0.902849L73.4201 4.95783C73.4996 5.19966 73.7375 5.36458 74.0069 5.36458L78.3847 5.36458C78.9721 5.36458 79.2243 6.06524 78.7575 6.40038L75.1636 8.98054C74.9591 9.12738 74.8737 9.37849 74.9497 9.60958L76.3098 13.7459C76.4863 14.2828 75.8253 14.7161 75.3502 14.3749L71.8728 11.8784C71.6527 11.7204 71.3473 11.7204 71.1272 11.8784L67.6498 14.3749C67.1747 14.7161 66.5137 14.2828 66.6902 13.7459L68.0503 9.60958C68.1263 9.37849 68.0409 9.12738 67.8364 8.98054L64.2425 6.40038C63.7757 6.06524 64.0279 5.36458 64.6153 5.36458L68.9931 5.36458C69.2625 5.36458 69.5004 5.19966 69.5799 4.95783L70.9132 0.902849Z" />
+                                    </svg>
+                                </div>
+                                <div class="empty-ratings">
+                                    <svg width="81" height="15" viewBox="0 0 79 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.91324 0.902849C7.09157 0.360509 7.90843 0.360509 8.08676 0.902849L9.4201 4.95783C9.49961 5.19966 9.73752 5.36458 10.0069 5.36458L14.3847 5.36458C14.9721 5.36458 15.2243 6.06524 14.7575 6.40038L11.1636 8.98054C10.9591 9.12738 10.8737 9.37849 10.9497 9.60958L12.3098 13.7459C12.4863 14.2828 11.8253 14.7161 11.3502 14.3749L7.87282 11.8784C7.65271 11.7204 7.34729 11.7204 7.12718 11.8784L3.64982 14.3749C3.17467 14.7161 2.51371 14.2828 2.69024 13.7459L4.05033 9.60958C4.12632 9.37849 4.04092 9.12738 3.83639 8.98054L0.242515 6.40038C-0.224296 6.06524 0.0278915 5.36458 0.615331 5.36458L4.99314 5.36458C5.26248 5.36458 5.50038 5.19966 5.5799 4.95783L6.91324 0.902849Z" />
+                                        <path d="M22.9132 0.902849C23.0916 0.360509 23.9084 0.360509 24.0868 0.902849L25.4201 4.95783C25.4996 5.19966 25.7375 5.36458 26.0069 5.36458L30.3847 5.36458C30.9721 5.36458 31.2243 6.06524 30.7575 6.40038L27.1636 8.98054C26.9591 9.12738 26.8737 9.37849 26.9497 9.60958L28.3098 13.7459C28.4863 14.2828 27.8253 14.7161 27.3502 14.3749L23.8728 11.8784C23.6527 11.7204 23.3473 11.7204 23.1272 11.8784L19.6498 14.3749C19.1747 14.7161 18.5137 14.2828 18.6902 13.7459L20.0503 9.60958C20.1263 9.37849 20.0409 9.12738 19.8364 8.98054L16.2425 6.40038C15.7757 6.06524 16.0279 5.36458 16.6153 5.36458L20.9931 5.36458C21.2625 5.36458 21.5004 5.19966 21.5799 4.95783L22.9132 0.902849Z" />
+                                        <path d="M38.9132 0.902849C39.0916 0.360509 39.9084 0.360509 40.0868 0.902849L41.4201 4.95783C41.4996 5.19966 41.7375 5.36458 42.0069 5.36458L46.3847 5.36458C46.9721 5.36458 47.2243 6.06524 46.7575 6.40038L43.1636 8.98054C42.9591 9.12738 42.8737 9.37849 42.9497 9.60958L44.3098 13.7459C44.4863 14.2828 43.8253 14.7161 43.3502 14.3749L39.8728 11.8784C39.6527 11.7204 39.3473 11.7204 39.1272 11.8784L35.6498 14.3749C35.1747 14.7161 34.5137 14.2828 34.6902 13.7459L36.0503 9.60958C36.1263 9.37849 36.0409 9.12738 35.8364 8.98054L32.2425 6.40038C31.7757 6.06524 32.0279 5.36458 32.6153 5.36458L36.9931 5.36458C37.2625 5.36458 37.5004 5.19966 37.5799 4.95783L38.9132 0.902849Z" />
+                                        <path d="M54.9132 0.902849C55.0916 0.360509 55.9084 0.360509 56.0868 0.902849L57.4201 4.95783C57.4996 5.19966 57.7375 5.36458 58.0069 5.36458L62.3847 5.36458C62.9721 5.36458 63.2243 6.06524 62.7575 6.40038L59.1636 8.98054C58.9591 9.12738 58.8737 9.37849 58.9497 9.60958L60.3098 13.7459C60.4863 14.2828 59.8253 14.7161 59.3502 14.3749L55.8728 11.8784C55.6527 11.7204 55.3473 11.7204 55.1272 11.8784L51.6498 14.3749C51.1747 14.7161 50.5137 14.2828 50.6902 13.7459L52.0503 9.60958C52.1263 9.37849 52.0409 9.12738 51.8364 8.98054L48.2425 6.40038C47.7757 6.06524 48.0279 5.36458 48.6153 5.36458L52.9931 5.36458C53.2625 5.36458 53.5004 5.19966 53.5799 4.95783L54.9132 0.902849Z" />
+                                        <path d="M70.9132 0.902849C71.0916 0.360509 71.9084 0.360509 72.0868 0.902849L73.4201 4.95783C73.4996 5.19966 73.7375 5.36458 74.0069 5.36458L78.3847 5.36458C78.9721 5.36458 79.2243 6.06524 78.7575 6.40038L75.1636 8.98054C74.9591 9.12738 74.8737 9.37849 74.9497 9.60958L76.3098 13.7459C76.4863 14.2828 75.8253 14.7161 75.3502 14.3749L71.8728 11.8784C71.6527 11.7204 71.3473 11.7204 71.1272 11.8784L67.6498 14.3749C67.1747 14.7161 66.5137 14.2828 66.6902 13.7459L68.0503 9.60958C68.1263 9.37849 68.0409 9.12738 67.8364 8.98054L64.2425 6.40038C63.7757 6.06524 64.0279 5.36458 64.6153 5.36458L68.9931 5.36458C69.2625 5.36458 69.5004 5.19966 69.5799 4.95783L70.9132 0.902849Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                                <div class="review-title">
+                                                                    Perfect for Switching Positions
+                                                            </div>
+                                <div class="review-text replaceHref" data-url="https://getvelasleep.com/offer-01-j/">
+                                <p>"I move between my back and side throughout the night, and this pillow adapts seamlessly. The contour design supports my neck from both angles, and I don’t have to constantly readjust. It has really improved my overall sleep comfort."</p><p><strong>Naomi R.</strong></p>
+                            </div>
+                            </div>
+                        </div>
+                                    </div>
+                            </div>
+            
+            
+                                                    <div class="full-content-section">
+            <div class="saving-section special-saving-section">
+                <div class="saving-section-content">
+                    <h2>UPDATE: VelaSleep Is Currently On Sale For First-Time Customers! Here&#039;s How To Get The Deal:</h2>
+                    <div class="saving-content replaceHref" data-url="https://getvelasleep.com/offer-01-j/"><p>VelaSleep is on a mission to help millions of people finally wake up without neck pain, stiffness, or that groggy, unrested feeling. That's why they're offering first-time customers a special discount: <a href="http://link"><strong><u>Get up to 50% OFF your order when you order from the official VelaSleep website.</u></strong></a></p><p> </p><p>This is the lowest price you’ll find — but this deal won't last forever. VelaSleep runs these promotions for a limited time, and once it's over, it may never be back.</p><p> </p><p>Plus, every order is backed by a <strong>30-night money-back guarantee </strong>— so if you don't wake up feeling better than you have in years, you can simply return it for a full refund, no questions asked.</p><p> </p><p>Click the link below to see if the deal is still available!</p></div>
+                </div>
+            </div>
+        </div>
+    
+            
+                                            <div class="content-section full-button">
+            <a href="https://getvelasleep.com/offer-01-j/" class="with-query-params">Click Here To Check Availability</a>
+        </div>
+    
+            
+        
+                                                                                    
+        
+                                                        
+                <footer class="add-slide ">
+            <div class="full-content-section">
+                                    <div class="top">
+                                                    <div class="logo-section">
+                                            
+            
+    
+                
+                                                                        
+                                                
+    <img alt="logo"
+         
+         width="198"
+         height="24"
+         src="https://prod-assets.gu-plat.com/logo/wellwellwell-logo_2023-10-04-194432_dmyl.svg?width=198&amp;height=24&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85"
+         srcset="https://prod-assets.gu-plat.com/logo/wellwellwell-logo_2023-10-04-194432_dmyl.svg?width=198&amp;height=24&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 198w, https://prod-assets.gu-plat.com/logo/wellwellwell-logo_2023-10-04-194432_dmyl.svg?width=396&amp;height=48&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 396w"
+         sizes="198px"
+         decoding="async"
+         loading="lazy"/>
+
+    
+                            </div>
+                                                                                            </div>
+                                <div class="bottom">
+                                            <ul class="bottom-menu">
+                                                        <li>
+                                <span class="title-footer">
+                                    <a href="#" class="footer-static-link" onclick="return false;">Privacy Policy</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="title-footer">
+                                    <a href="#" class="footer-static-link" onclick="return false;">Terms &amp; Conditions</a>
+                                </span>
+                            </li>
+                                                                                    
+                            
+                            
+                                                            <li class="copyright">Copyright &copy; 2026. All Rights Reserved.</li>
+                                                    </ul>
+                    
+                                                                
+                </div>
+            </div>
+                    </footer>
+
+    
+            
+                                                            <div class="content-section title-element">
+                        <h6>
+                THIS IS AN ADVERTISEMENT AND NOT AN ACTUAL NEWS ARTICLE, BLOG, OR CONSUMER PROTECTION UPDATE. The content depicted on this site and the material depicted therein are not actual news stories. Rather, this story is based on real news stories and personal experiences. The results portrayed in the story and the in the comments are illustrative, and may not be the results that you achieve with these products. This page could receive compensation for clicks on or purchase of products featured on this site. MEDICAL DISCLOSURE: This is not a medical advice and the product is not intended to diagnose, treat, cure, or prevent any disease.
+            </h6>
+        </div>
+    
+    
+                            
+
+    <div id="sticky" class="sticky sticky-bg bottom">
+
+        <div id="sticky-content" class="sticky-content">
+
+                        
+            
+    
+                
+                                                                        
+                                                
+    <img alt="logo"
+         class="sticky-logo"
+         width="198"
+         height="24"
+         src="https://prod-assets.gu-plat.com/logo/wellwellwell-logo_2023-10-04-194432_dmyl.svg?width=198&amp;height=24&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85"
+         srcset="https://prod-assets.gu-plat.com/logo/wellwellwell-logo_2023-10-04-194432_dmyl.svg?width=198&amp;height=24&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 198w, https://prod-assets.gu-plat.com/logo/wellwellwell-logo_2023-10-04-194432_dmyl.svg?width=396&amp;height=48&amp;mode=fit&amp;fit=bounds&amp;format=auto&amp;quality=85 396w"
+         sizes="198px"
+         decoding="async"
+         loading="lazy"/>
+
+    
+
+            <div class="offer-section">
+                <div class="offer-text"></div>
+                                    <a class="cta with-query-params" href="https://getvelasleep.com/offer-01-j/">
+                        Check Availability
+                    </a>
+                            </div>
+        </div>
+    </div>
+
+                </div>
+        </main>
+    </div>
+</div>
+
+
+<script id="standalone-sticky-fix">
+(function () {
+  function updateSticky() {
+    var sticky = document.getElementById('sticky');
+    if (!sticky) return;
+    sticky.classList.toggle('sticky-visible', window.scrollY > 600);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', updateSticky);
+  } else {
+    updateSticky();
+  }
+  window.addEventListener('scroll', updateSticky, { passive: true });
+  window.addEventListener('resize', updateSticky);
+})();
+</script>
+<script type="text/javascript">
+  // Variables for GuTracking events.
+  // We should be using the gu_ga4_id and GTM values that are stored on the advertorial Site Settings
+  // instead of the those tracking values that we currently pulled in from the brand/offer.
+  // Get settings without 'gtm_id','gu_ga4_id' for advertorial offer
+  // and merge with advertorial site 'gtm_id','gu_ga4_id' settings
+  function getDomain(url) {
+    try {
+        const parsedUrl = new URL(url);
+        return parsedUrl.hostname;
+    } catch (error) {
+        console.error("Invalid URL:", error);
+        return null;
+    }
+  }
+
+    window.giddyupTracking = {
+    "gtm_id": "GTM-563TRGSR",
+    "gu_ga4_id": "G-NDMJP0G2R4",
+    "advertiser_id": "409",
+    "listicle_landing_event": null,
+    "custom_landing_page_event": "20232",
+    "roktApiKey": "us2-f05daa370684624db9001e78268d423b",
+    "rkvrTrackingPixel": {
+        "label": "Less Restrictive Filter",
+        "value": "less_restrictive",
+        "selected": true,
+        "valid": true,
+        "icon": null,
+        "color": null
+    },
+    "landing_page_event": "20231",
+    "presell_landing_event": "20233",
+    "vsl_landing_event": "20234",
+    "add_to_cart_event": "20235",
+    "initiate_checkout_event": "20236",
+    "post_purchase_event_1": "20237",
+    "post_purchase_event_2": "20238",
+    "post_purchase_event_3": "20239",
+    "shipping_info_event": "20240",
+    "shipping_method_event": "20241",
+    "start_checkout_event": "20242",
+    "view_upsell": "20243",
+    "abandoned_cart_1": "20244",
+    "abandoned_cart_2": "20245",
+    "abandoned_cart_3": "20246",
+    "abandoned_cart_4": "20247",
+    "abandoned_cart_5": "20248",
+    "abandoned_cart_6": "20249",
+    "abandoned_cart_7": "20250",
+    "abandoned_cart_8": "20251",
+    "abandoned_cart_9": "20252",
+    "abandoned_cart_10": "20253",
+    "abandoned_cart_conversion": "20254"
+}
+  window.giddyupTracking.offer_id = '1156';
+  window.giddyupTracking.house_aff_id = "1547";
+      window.giddyupTracking.consent_mode = false;
+  if (window.giddyup.offerUrl) window.giddyupTracking.domain = getDomain(window.giddyup.offerUrl)
+    const searchParams = new URL(location.href).searchParams;
+
+  if (searchParams.has('adv2')) {
+    window.giddyupTracking.adv2 = searchParams.get('adv2');
+  }
+  </script>
+
+
+<script>
+function getDeviceType() {
+  const ua = navigator.userAgent;
+  if (/\b(iPad|PlayBook)\b/i.test(ua) || (navigator.maxTouchPoints && navigator.maxTouchPoints > 2 && /MacIntel/.test(navigator.platform))) {
+    return 'Tablet';
+  } else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+    return 'Mobile';
+  } else if (/Windows NT|Macintosh|Linux/.test(ua)) {
+    return 'PC';
+  }
+  return 'Null';
+}
+
+function getLandingPage() {
+  return window.location.origin + window.location.pathname;
+}
+
+const UTM_SOURCE_VALUE_ABANDONED_CART = 'abandoned_cart';
+
+// Sets window.statsigUser and window.statsigOptions before the sidecar loads so
+// it picks up the correct user attributes and environment (instead of defaulting to production).
+function initStatsigContext() {
+  const params = new URLSearchParams(window.location.search);
+  const customAttributes = {};
+  for (const param of ['aff_id', 'oid', 'lpid']) {
+    const value = params.get(param);
+    if (value) customAttributes[param] = value;
+  }
+  customAttributes.device_type = getDeviceType();
+  customAttributes.landing_page = getLandingPage();
+  customAttributes.offer_group_name = window.giddyup?.offerGroupName || '';
+  const utmSourceParam = params.get('utm_source');
+  customAttributes.abandoned_cart =
+    utmSourceParam != null &&
+    utmSourceParam.toLowerCase() === UTM_SOURCE_VALUE_ABANDONED_CART;
+  const initialCheckoutVariant = window.giddyup?.checkoutTemplate === 'crossover'
+    ? 'crossover'
+    : 'non-crossover';
+  customAttributes.checkout_variant = initialCheckoutVariant;
+  if (window.giddyup) window.giddyup.checkoutVariant = initialCheckoutVariant;
+
+  const guId = window.gu_id || '';
+  window.statsigUser = {
+    userID: guId,
+    custom: customAttributes,
+    customIDs: { stableID: guId },
+  };
+
+  window.statsigOptions = {
+    environment: { tier: 'production' },
+    initialSessionID: guId,
+    overrideStableID: guId,
+  };
+}
+</script>
+
+<script>
+initStatsigContext();
+</script>
+<script type="text/javascript" id="statsig" src="../dist/statsig.72c0d9de35108aa138a9.js"></script>
+<script>
+window.statsigReady = (async function() {
+  try {
+    if (window.Statsig) {
+      const { StatsigClient } = window.Statsig;
+      window.statsigClient = new StatsigClient(
+        'client-GUomAJWj1kmMBXuTo4JHKEuseWJthiZTq65hDaqvyMS',
+        window.statsigUser,
+        window.statsigOptions,
+      );
+      await window.statsigClient.initializeAsync();
+    }
+  } catch (e) {
+    console.error('Statsig initialization failed:', e);
+  }
+})();
+</script>
+
+
+<script type="text/javascript" src="../dist/vue-vendor.6973e38bc7c789316c9b.js"></script>
+<script type="text/javascript" src="../dist/vendor.f8aa99e2ca6251855e28.js"></script>
+
+<script type="text/javascript" src="../dist/advertorial.400a8e610c7fba66dc92.js"></script>
+
+  <script type="text/javascript" class="optanon-category-C00003">
+  // Google tag manager
+  if (window.giddyupTracking.gtm_id) {
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []
+      w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'})
+      var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''
+      j.async = true
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+      f.parentNode.insertBefore(j, f)
+    })(window, document, 'script', 'dataLayer', window.giddyupTracking.gtm_id)
+  }
+</script>
+
+<!-- GU_TRACKING BEGIN -->
+<script type="text/javascript"
+        src="https://www.gu-ecom.com/scripts/sdk/everflow.vanilla.js"
+        id="everflow-js"></script>
+<!-- GU_TRACKING END -->
+
+<script type="text/javascript">
+  
+    const event = {
+    eventName: 'Presell Page'
+  }
+
+  window.gu_fire_event(event)
+</script>
+
+</body>
+</html>
+
