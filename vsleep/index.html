@@ -81,8 +81,60 @@ pintrk('page');
 
                                                 window.giddyup.ctaLinkedBrandDomain = 863706;
                   
-        
+        // Redirect to translated landing page based on browser language
+        // Disable language redirect if "?_noLang=1" GET parameter present at URL
+        let getParams = new URL(document.location).searchParams;
+        if (getParams.get('_noLang') !== null) {
+          return;
         }
+
+        // Detect user language
+        let userLanguage = navigator.language || navigator.userLanguage;
+        let browserLanguages = navigator.languages;
+
+        // Override if ?lang=xx is in URL
+        if (getParams.has('lang')) {
+          userLanguage = getParams.get('lang');
+          browserLanguages = [userLanguage];
+        }
+
+        const userLanguageCode = userLanguage.split('-');
+        let redirectTo = '';
+
+        if (userLanguage !== giddyup.offerLang && userLanguageCode[0] !== giddyup.offerLang) {
+          const currentUrl = document.location.origin +
+            (document.location.pathname.endsWith('/') ? document.location.pathname : document.location.pathname + '/');
+
+          browserLanguages.forEach((locale) => {
+            if (redirectTo) return;
+
+            const lang = locale.split('-')[0].toLowerCase();
+
+            // Base language
+            if (typeof window.giddyup.offerSites[lang] !== 'undefined' && !redirectTo.length) {
+              const targetUrl = new URL(window.giddyup.offerSites[lang], document.location.href);
+              const targetCanonical = targetUrl.origin +
+                (targetUrl.pathname.endsWith('/') ? targetUrl.pathname : targetUrl.pathname + '/');
+              if (currentUrl !== targetCanonical) {
+                targetUrl.searchParams.set('lang', lang);
+                redirectTo = targetUrl.toString();
+              }
+            }
+
+            // Exact locale
+            if (typeof window.giddyup.offerSites[locale] !== 'undefined' && !redirectTo.length) {
+              const targetUrl = new URL(window.giddyup.offerSites[locale], document.location.href);
+              const targetCanonical = targetUrl.origin +
+                (targetUrl.pathname.endsWith('/') ? targetUrl.pathname : targetUrl.pathname + '/');
+              if (currentUrl !== targetCanonical) {
+                targetUrl.searchParams.set('lang', String(locale).toLowerCase());
+                redirectTo = targetUrl.toString();
+              }
+            }
+          });
+        }
+
+        
       })()
     </script>
 
